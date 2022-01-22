@@ -27,7 +27,7 @@ header
 }
 
 .topnav a:hover {
-    background-color: blueviolet;
+    background-color: rgb(37, 67, 201);
     color: yellow;
 }
 
