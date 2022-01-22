@@ -13,7 +13,7 @@ header
 }
 
 .topnav {
-    background-color: #333;
+    background-color: #87babf;
     overflow: hidden;
 }
 .topnav a {
@@ -32,7 +32,7 @@ header
 }
 
 .topnav a.active {
-    background-color: #04AA6D;
+    background-color: #03045e;
     color: gray;
 }
 
