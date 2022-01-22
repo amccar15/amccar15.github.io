@@ -4,6 +4,11 @@ body {
     color: turquoise;
     background-color: purple;
 }
+header {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    color: red;
+}
 
 .topnav {
     background-color: #333;
