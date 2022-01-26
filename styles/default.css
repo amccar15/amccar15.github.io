@@ -53,6 +53,7 @@ footer {
     vertical-align: top;
     width: 15px;
     height: 15px;
+    margin-left: 0px;
 }
 
 .topnav a:hover {
