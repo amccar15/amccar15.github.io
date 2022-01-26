@@ -18,15 +18,6 @@ header
   color: #023e8a;
 }
 
-h2.headertekst {
-    text-align: center;
-}
-
-img {
-    align-items: center;
-    text-align: center;
-}
-
 ul {
     text-align: left;
     list-style-type: disc;
