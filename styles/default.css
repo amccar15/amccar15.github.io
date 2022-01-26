@@ -19,6 +19,7 @@ header
 }
 
 main {
+    display: block;
     text-align: center;
 }
 
