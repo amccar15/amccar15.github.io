@@ -1,3 +1,6 @@
+head {
+    text-align: center;
+}
 body 
 {
   font-family: Tahoma, sans-serif;
@@ -15,6 +18,13 @@ header
   color: #023e8a;
 }
 
+main {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
 .topnav {
     background-color: #87babf;
     overflow: hidden;
