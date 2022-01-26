@@ -49,11 +49,10 @@ footer {
 
 .topnav-logo {
     color:rgb(37, 67, 201);
-    display: inline-block;
-    vertical-align: top;
-    width: 15px;
-    height: 15px;
-    margin-left: 0px;
+    padding:0px;
+    margin: 0px;
+    align-items: left;
+    float: left;
 }
 
 .topnav a:hover {
