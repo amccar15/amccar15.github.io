@@ -19,12 +19,11 @@ header
 }
 
 main {
-    display: block;
+    margin: 0 auto;
     text-align: left;
 }
 
 ul {
-    display: block;
     text-align: left;
     list-style-type: disc;
     margin-block-start: 1em;
