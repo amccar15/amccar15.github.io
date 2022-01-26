@@ -24,10 +24,12 @@ main {
 
 footer {
     text-align: center;
+
 }
 .topnav {
     background-color: #87babf;
     overflow: hidden;
+
 }
 .topnav a {
     float: left;
@@ -37,6 +39,15 @@ footer {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+.topnav-logo {
+    color:rgb(37, 67, 201);
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .topnav a:hover {
