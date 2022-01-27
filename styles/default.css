@@ -36,6 +36,15 @@ header
     color: gray;
 }
 
+.navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
 .topnav .icon {
     display: none;
 }
