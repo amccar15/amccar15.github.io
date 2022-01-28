@@ -71,7 +71,7 @@ footer
 .topnav a:hover 
 {
     background-color: rgb(37, 67, 201);
-    color: yellow;
+    color: #FFEEC9;
 }
 
 .topnav a.active 
@@ -93,4 +93,101 @@ footer
 .topnav .icon 
 {
     display: none;
+}
+
+.dropbtn
+{
+    background-color: #03045e;
+    color: #FFEEC9;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #87babf;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(red, green, blue, alpha);
+    z-index: 1;
+}
+
+.dropdown-content a
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover
+{
+    background-color: #590099;
+}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+.dropdown:hover .dropbtn
+{
+    background-color: rgb(37, 67, 201);
+}
+
+ol
+{
+    text-align: left;
+}
+
+h2, h3 
+{
+  text-align: center;
+  font-family: Georgia;
+  
+}
+
+table, th, td 
+{
+  border: 1px solid black;
+  margin: 1em;
+  color: #FFF0B7;
+}
+
+header, footer
+{
+  text-align: center;
+  font-family: serif;
+}
+figure 
+{
+  text-align: center;
+}
+
+th
+{
+  background-color: #121212;
+}
+
+tr
+{
+  background-color: #590099;
+}
+
+.right 
+{
+  text-align: right;
+}
+
+tbody tr:nth-child(odd)
+{
+  background-color: #121212;
 }
