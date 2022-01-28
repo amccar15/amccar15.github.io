@@ -1,4 +1,5 @@
-head {
+head 
+{
     text-align: center;
 }
 body 
@@ -18,7 +19,8 @@ header
   color: #023e8a;
 }
 
-ul {
+ul 
+{
     text-align: left;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -28,16 +30,19 @@ ul {
     padding-inline-start: 40px;
 }
 
-footer {
+footer 
+{
     text-align: center;
 
 }
-.topnav {
+.topnav 
+{
     background-color: #87babf;
     overflow: hidden;
 
 }
-.topnav a {
+.topnav a 
+{
     float: left;
     display: block;
     color: #03045e;
@@ -47,7 +52,8 @@ footer {
     font-size: 17px;
 }
 
-.topnav-logo {
+.topnav-logo 
+{
     color:rgb(37, 67, 201);
     padding:0px;
     margin: 0px;
@@ -56,17 +62,20 @@ footer {
     float: left;
 }
 
-.topnav a:hover {
+.topnav a:hover 
+{
     background-color: rgb(37, 67, 201);
     color: yellow;
 }
 
-.topnav a.active {
+.topnav a.active 
+{
     background-color: #03045e;
     color: gray;
 }
 
-.navbar-logo {
+.navbar-logo 
+{
     color: #fff;
     justify-self: start;
     margin-left: 20px;
@@ -75,6 +84,7 @@ footer {
     align-items: center;
 }
 
-.topnav .icon {
+.topnav .icon 
+{
     display: none;
 }
