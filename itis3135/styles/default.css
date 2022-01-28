@@ -19,6 +19,12 @@ header
   color: #023e8a;
 }
 
+div.contract 
+{
+    font-family: Tahoma, sans-serif;
+    text-align: left;
+    margin: 10px;
+}
 ul 
 {
     text-align: left;
