@@ -1,36 +1,148 @@
-<!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8" />
-        <title>
-            Austin McCarter | ITIS 3135 | Tables
-            <link href="/itis3135/styles/default.css" type = "text/css" rel="stylesheet"> 
-        </title>
-        
-    </head>
-    
-    <body>
-        <header>
-            <h1> Austin McCarter | ITIS 3135 </h1>
-        </header>
-        <main>
-            <h2>HTML Tables</h2>
-            <h3>
-                
-            </h3>
-        </main>
-        <footer>
-            <p>Designed by McCarter & Co &copy;2022.</p>
-            <p>
-                <p>
-					<a href="https://jigsaw.w3.org/css-validator/check/referer">
-					<img src = "images/button_validation_css.png" /></a>
 
-					<a href="https://validator.w3.org/check?uri=referer">
-					<img src = "images/button_validation_html5.png" /> </a>
-				</p>
-            </p>
-        </footer>
-    </body>
-   
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Austin McCarter | ITIS 3135 | Tables
+    </title>
+    <link rel="stylesheet" href="styles\default.css">
+  </head>
+
+  <body>
+    <header>
+      <h1> Austin McCarter | ITIS 3135 </h1>
+    </header>
+    <main>
+      <h2>Tabular Data</h2>
+      <ol>
+        <li>Austin McCarter amccar15@uncc.edu 4</li>
+        <li>James Monkey aquamarinemonkey@yahoo.com 2</li>
+        <li>Timothy Davidson timtim@gmail.com 1</li>
+        <li>Chelsea Monty moneychaser@gmail.com 3</li>
+        <li>Racheal Grey rachealgrey@gmail.com 2</li>
+        <li>Chris Hemsworth bigchris@gmail.com 3</li>
+        <li>Vanessa Bissinger blondegirl22@gmail.com 4</li>
+      </ol>
+      <h3>
+        Employee Data in Simple Table
+      </h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Years of Service</th>
+        </tr>
+        <tr>
+          <td>Austin McCarter</td>
+          <td>amccar15@uncc.edu</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>James Monkey</td>
+          <td> aquamarinemonkey@yahoo.com</td>
+          <td> 2</td>
+        </tr>
+        <tr>
+          <td>Timothy Davidson</td>
+          <td>timtim@gmail.com</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Chelsea Monty</td>
+          <td>moneychaser@gmail.com</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Racheal Grey</td>
+          <td>rachealgrey@gmail.com</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Chris Hemsworth</td>
+          <td>bigchris@gmail.com</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Vanessa Bissinger</td>
+          <td>blondegirl22@gmail.com</td>
+          <td>4</td>
+        </tr>
+      </table>
+
+      <h3>
+        Employee Data in Complex Table
+      </h3>
+      <figure>
+        <figurecaption>Employee Information</figurecaption>
+        <table>
+          <tr>
+            <th id="category">Category</th>
+            <th id="name">Name</th>
+            <th id="email">Email</th>
+            <th id="year" class="right">Years of Service</th>
+            <th id="salary" class='right'>Salary</th>
+          </tr>
+          <tr>
+            <td headers="category">Boss</td>
+            <td headers="name">Austin McCarter</td>
+            <td headers="email">amccar15@uncc.edu</td>
+            <td headers="year" class="right"> 4 </td>
+            <td headers="salary" class="right"> $100,000</td>
+          </tr>
+          <tr>
+            <td headers="category">Mascot</td>
+            <td headers="name">James May</td>
+            <td headers="email">aquamarine@gmail.com</td>
+            <td headers="year" class="right">1</td>
+            <td headers="salary" class="right"> $2,500</td>
+          </tr>
+          <tr>
+            <td headers="category" rowspan="3">Developers</td>
+            <td headers="name">Timothy Davidson</td>
+            <td headers="email">timtim@gmail.com</td>
+            <td headers="year" class="right">1</td>
+            <td headers="salary" class="right" rowspan="3"> $75,000</td>
+          </tr>
+          <tr>
+            <td headers="name">Chelsea Monty</td>
+            <td headers="year">moneychaser@gmail.com</td>
+            <td headers="year" class="right">3</td>
+          </tr>
+          <tr>
+            <td headers="name">Racheal Grey</td>
+            <td headers="email">rachealgrey@gmail.com</td>
+            <td headers="year" class="right">2</td>
+          </tr>
+          <tr>
+            <td headers="category" rowspan="2">Marketing team</td>
+            <td headers="name">Chris Hemsworth</td>
+            <td headers="email">bigchris@gmail.com</td>
+            <td headers="year" class="right">3</td>
+            <td headers="salary" class="right" rowspan="2">$88,000</td>
+          </tr>
+          `<tr>
+            <td headers="name">Vanessa Bissinger</td>
+            <td headers="email">blondegirl22@gmail.com</td>
+            <td headers="year" class="right">4</td>
+          </tr>
+          <tf>
+            <td header="salary" colspan="3" class="right"> Total Salary</td>
+            <td headers="years" class="right">18</td>
+            <td headers="salary" class="right">$265,500</td>
+          </tf>
+        </table>
+      </figure>
+    </main>
+    <footer>
+      <p>Designed by McCarter & Co &copy;2022.</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img src="images/button_validation_css.png" /></a>
+
+        <a href="https://validator.w3.org/check?uri=referer">
+          <img src="images/button_validation_html5.png" /> </a>
+      </p>
+    </footer>
+  </body>
+
 </html>
