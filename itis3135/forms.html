@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Austin McCarter | ITIS 3135 | Work Page
+    </title>
+    <link rel="stylesheet" href="styles/default.css">
+  </head>
+
+  <body>
+    <header>
+      <h1> Austin McCarter | ITIS 3135 </h1>
+      <nav>
+        <div class="topnav">
+          <img class="topnav-logo" src="images/monkey.gif" alt="Nav-logo">
+          <a href="index.html" class="active">Home</a>
+          <a href="introduction.html">Introduction</a>
+          <a href="https://webpages.charlotte.edu/amccar15/">Charlotte.edu</a>
+          <a href="https://github.com/amccar15">Github</a>
+          <a href="githubio.html">Github.io</a>
+          <a href="contract.html">Contract</a>
+          <a href="https://www.freecodecamp.org/austinmccarter121">FreeCodeCamp</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h2>Haircare Products Catalog</h2>
+      <figure>
+        <figcaption>Signup for the best Catalog</figcaption>
+        <form action="#">
+          <div class="input-container">
+            <i class="fa fa-user icon"></i>
+            <input class="input-field" type="text" id="fname" name="fname" placeholder="First Name" required><br>
+            <input class="input-field" type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+          </div>
+          <div class="input-container">
+            <i class="fa fa-phone icon"></i>
+            <input class="input-field" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="phone number" required><br>
+          </div>
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="email" id="email" name="email" placeholder="email" require><br>
+          </div>
+          <figure class="container">
+            <figcaption>Hair products you commonly used in the shower:</figcaption>
+            <input type="checkbox" id="product1" name="product1" value="shampoo">
+            <label for="product1">Shampoo</label>
+            <input type="checkbox" id="product2" name="product2" value="conditioner">
+            <label for="product2">Conditioner</label>
+            <input type="checkbox" id="product3" name="product3" value="hairmask">
+            <label for="product3">Hair Mask</label>
+          </figure>
+          <figure class="container">
+            <figcaption>Hair sprays you most commonly use:</figcaption>
+            <input type="radio" id="product4" name="product4" value="dryshampoo">
+            <label for="product4">Dry Shampoo</label>
+            <input type="radio" id="product5" name="product5" value="gel">
+            <label for="product5">Gel</label>
+            <input type="radio" id="product6" name="product6" value="Volumizer">
+            <label for="product6">Volumizer</label>
+          </figure>
+          <label for="contact">Perfered form of contact</label>
+          <select name="contact" id="contact">
+            <option value="phone">SMS</option>
+            <option value="email">Email</option>
+          </select>
+          <br><input type="submit" class="btn"><br>
+          <input type="reset" class="btn">
+        </form>
+      </figure>
+    </main>
+    <footer>
+      <p>Designed by McCarter & Co &copy;2022.</p>
+      <p>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+          <img src="images/button_validation_css.png" alt="css" /></a>
+
+        <a href="https://validator.w3.org/check?uri=referer">
+          <img src="images/button_validation_html5.png" alt="html5" /> </a>
+      </p>
+    </footer>
+  </body>
+
+</html>
