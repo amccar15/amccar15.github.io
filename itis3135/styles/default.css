@@ -130,7 +130,7 @@ footer
 
 .dropdown-content a:hover
 {
-    background-color: #590099;
+    background-color: rgb(37, 67, 201);
 }
 
 .dropdown:hover .dropdown-content 
