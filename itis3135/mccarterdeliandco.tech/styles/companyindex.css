@@ -2,21 +2,24 @@ body
 {
     background-color: #d9d9d9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F7F7F7;
     height: 100%;
 }
 
 .bg 
 {
-    background-image: url('1131274.jpg');
+    background-image: url(../images/1131274.jpg);
+    object-fit: cover;
+    width: 100%;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: fixed;
+    z-index: -1;
 }
 
 h1,h2
 {
     text-align: center;
+    font-family: Aileron;
 }
 
 main
@@ -31,7 +34,7 @@ footer
 .topnav 
 {
     overflow: hidden;
-    background-color: black;
+    background-color: #1B365C;
     position: relative;
 }
 
@@ -42,20 +45,19 @@ footer
 
 .topnav a
 {
+    float: left;
     color: white;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     display: block;
 }
 
 .topnav a.icon
 {
-    background: #333;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
+    width: 30px;
+    line-height: normal;
 }
 
 .topnav a:hover
