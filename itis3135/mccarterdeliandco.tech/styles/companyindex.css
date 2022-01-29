@@ -2,6 +2,16 @@ body
 {
     background-color: #d9d9d9;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+.bg 
+{
+    background-image: url('1131274.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1,h2
