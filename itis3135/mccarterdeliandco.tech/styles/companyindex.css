@@ -1,0 +1,61 @@
+body
+{
+    background-color: #d9d9d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1,h2
+{
+    text-align: center;
+}
+
+main
+{
+    background-image: url('1331274.jpg');
+}
+footer
+{
+    text-align: center;
+}
+
+.topnav 
+{
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+}
+
+.topnav #myLinks 
+{
+    display: none;
+}
+
+.topnav a
+{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon
+{
+    background: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover
+{
+    background-color: black;
+    color: #FFF0C5;
+}
+
+.active
+{
+    background: #1B365C;
+    color: black;
+}
