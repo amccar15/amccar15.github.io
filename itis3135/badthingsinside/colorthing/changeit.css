@@ -1,0 +1,38 @@
+body
+{
+    background-color: azure;
+    font-family: papyrus;
+    color: grey;
+    border-top-style: groove;
+    border-right-style: solid;
+    border-bottom-style: ridge;
+    border-left-style: dotted;
+    border-width: 10px;
+}
+img
+{
+    width: 400px;
+    height: 400px;
+}
+h1, h2
+{
+    text-align: right;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+p
+{
+    text-align: center;
+    font-size: xx-large;
+    font-style: italic;
+}
+ul
+{
+    text-align: center;
+    text-decoration: underline;
+}
+footer
+{
+    font-style: oblique;
+    text-decoration: wavy;
+}
