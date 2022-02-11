@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+        <head>
+            <meta charset="utf-8">
+            <title> Austin McCarter | ITIS 3135 | First JavaScript</title>
+            <link href="styles/default.css" rel="stylesheet">
+        </head>
+        <body>
+            <header>
+                <h1>First JavaScript</h1>
+            </header>
+            <main>
+                <h2>Today is <span id="date-time"></span></h2>
+                <button onclick="scriptTest()">Test!</button>
+                <br>
+                    <input type="text" placeholder="Username" name="username" id="usr">
+                    <input type="text" placeholder="Password" name="password" id="psw">
+                    <input type="text" placeholder="How are you feeling?" name="feeling" id="feel">
+                    <button type="submit" onclick="showInput()">Login</button>
+                    <br>
+                    <p>McCarter Deli & Company welcomes you, <span id="outputUser"></span>! 
+                    We're glad you are doing <span id="outputFeeling"></span></p> 
+                    <br>
+                    <div class="button-container">
+                        <div class="inner">
+                            <button onclick="sandwhich()" class="icon">Give me a sandwhich!</button>
+                            <label id="sandwhich" class="input-field"></label>
+                            <button onclick="insult()" class="icon">Want an insult?</button> 
+                            <span id="insultme" class="input-field"></span></div>
+                            <button onclick="compliment()" class="icon">Want a compliment?</button> 
+                            <span id="complimentme"></span><br>
+                            <button onclick="addNumbers()" class="icon">add sandwhich prices</button> 
+                            <input type="number" name="price1" id="price1" placeholder="enter a number">
+                            <label for="price1"> + </label>
+                            <input type="number" name="price2" id="price2" placeholder="enter a number">
+                            <span id="sandwhichprice"></span><br>
+                            <button onclick="coinflip()" class="icon">flip a coin</button>
+                            <span id="flipcoin"></span>
+                    </div>
+            </main>
+            <footer>
+                 <script src="scripts/defaultscripts.js"></script>
+            </footer>
+        </body>
+    </html>
