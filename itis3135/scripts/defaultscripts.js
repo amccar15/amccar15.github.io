@@ -10,7 +10,7 @@ function showInput()
 {
     var usr = document.getElementById("usr").value;
     var feel = document.getElementById("feel").value;
-    var display = "McCarter Deli & Company Welcomes you," + usr + "We're glad you are doing " + feel;
+    var display = "McCarter Deli & Company Welcomes you, " + usr + "! We're glad you are doing " + feel;
     alert(display);
 }
 
