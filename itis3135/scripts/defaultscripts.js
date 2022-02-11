@@ -8,8 +8,10 @@ var dt = new Date();
 
 function showInput() 
 {
-    document.getElementById("outputUser").innerHTML = document.getElementById("usr").value;
-    document.getElementById("outputFeeling").innerHTML = document.getElementById("feel").value;
+    var usr = document.getElementById("usr").value;
+    var feel = document.getElementById("feel").value;
+    var display = "McCarter Deli & Company Welcomes you," + usr + "We're glad you are doing " + feel;
+    alert(display);
 }
 
 function sandwhich()
