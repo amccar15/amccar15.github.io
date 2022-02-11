@@ -246,3 +246,14 @@ tbody tr:nth-child(odd)
   text-align: left;
   margin: 1em;
 }
+
+.button-container 
+{
+  width: 100%;
+  text-align: center;
+}
+
+.inner 
+{
+  display: inline-block;
+}
