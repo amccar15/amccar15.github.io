@@ -7,7 +7,7 @@
         </head>
         <body>
             <header>
-                <h1>First JavaScript</h1>
+                <h1>Austin McCarter | ITIS 3135</h1>
                 <nav>
                     <div class="topnav">
                         <img class="topnav-logo" src="images/monkey.gif" alt="Nav-logo">
@@ -22,7 +22,8 @@
                 </nav>
             </header>
             <main>
-                <h2>Today is <span id="date-time"></span></h2>
+                <h2>First JavaScript</h2>
+                <h3>Today is <span id="date-time"></span></h3>
                 <button onclick="scriptTest()">Test!</button>
                 <br>
                     <input type="text" placeholder="Username" name="username" id="usr">
@@ -48,7 +49,9 @@
                     </div>
             </main>
             <footer>
-                 <script src="scripts/defaultscripts.js"></script>
+                <div data-include="components/footer.html"></div>
+                <script src="scripts/htmlinclude.js"></script>
+                <script src="scripts/defaultscripts.js"></script>
             </footer>
         </body>
     </html>
