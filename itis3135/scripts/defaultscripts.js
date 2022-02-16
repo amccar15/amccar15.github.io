@@ -3,8 +3,60 @@ function scriptTest()
     alert("Hey my script is running");
 }
 
-var dt = new Date();
-    document.getElementById("date-time").innerHTML = dt
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+ctx.strokeStyle = "#00ffff";
+ctx.lineWidth = 17;
+ctx.shadowBlur = 15;
+ctx.shadowColor = '#00ffff';
+
+function degToRoad(degree)
+{
+    var factor = Math.PI / 180;
+    return degree * factor;
+}
+
+function renderTime()
+{
+    var now = new Date();
+    var today = now.toDateString();
+    var time = now.toLocaleTimeString();
+    var hrs = now.getHours();
+    var min = now.getMinutes();
+    var sec = now.getSeconds();
+    var mil = now.getMilliseconds();
+    var smoothsec = sec + (mil/1000);
+    var smoothmin = min + (smoothsec/60);
+
+    gradient = ctx.createRadialGradient(250, 250, 5, 250, 250, 300);
+    gradient.addColorStop(0, "#03303a");
+    gradient.addColorStop(.75, "#caf0f8");
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, 500, 500);
+    //hours
+    ctx.beginPath();
+    ctx.arc(250, 250, 200, degToRoad(270), degToRoad((hrs * 30)- 90));
+    ctx.stroke();
+    //minutes
+    ctx.beginPath();
+    ctx.arc(250, 250, 170, degToRoad(270), degToRoad((smoothmin * 6)- 90));
+    ctx.stroke();
+    //second
+    ctx.beginPath();
+    ctx.arc(250, 250, 140, degToRoad(270), degToRoad((smoothsec * 6)- 90));
+    ctx.stroke();
+    //date
+    ctx.font = "25px Helvatica";
+    ctx.fillStyle = 'rgba(00, 255, 255, 1)';
+    ctx.fillText(today, 175, 250);
+    //time
+    ctx.font = "25px Helvetica Bold";
+    ctx.filleStyle = 'rgba(00, 255, 255, 1)';
+    ctx.fillText(time + ";" + mil, 175, 280);
+}
+
+setInterval(renderTime, 40);
 
 function showInput() 
 {
