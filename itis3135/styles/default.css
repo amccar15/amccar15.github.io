@@ -251,9 +251,12 @@ tbody tr:nth-child(odd)
 {
   width: 100%;
   text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .inner 
 {
   display: inline-block;
+  padding: 10px;
 }
