@@ -7,10 +7,12 @@
         </head>
         <body>
             <header>
-                <h1>First JavaScript</h1>
+                <div data-include="components/header.html"></div>
             </header>
             <main>
-                <h2>Today is <span id="date-time"></span></h2>
+                <h2>First JavaScript</h2>
+                <h3>Today is</h3>
+                <canvas id="canvas" width="500" height="500"></canvas> <br>
                 <button onclick="scriptTest()">Test!</button>
                 <br>
                     <input type="text" placeholder="Username" name="username" id="usr">
@@ -33,10 +35,12 @@
                             <span id="sandwhichprice"></span><br>
                             <button onclick="coinflip()" class="icon">flip a coin</button>
                             <span id="flipcoin"></span>
-                    </div>
+                        </div>
             </main>
             <footer>
-                 <script src="scripts/defaultscripts.js"></script>
+                 <div data-include="components/footer.html"></div>
             </footer>
+            <script src="scripts/defaultscripts.js"></script>
+            <script src="scripts/htmlinclude.js"></script>
         </body>
     </html>
