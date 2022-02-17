@@ -6,23 +6,17 @@
         <link href="styles/default.css" rel="stylesheet">
         <script src="scripts/polygons.js"></script>
     </head>
-    <body>
+    <body onload="display()">
         <header>
             <div data-include="components/header.html"></div>
         </header>
         <main>
             <h1>Polygons!</h1>
-            <p for="number">Hello! The Aquamarine Monkeys would love to get a number between 1 and 10!
-                This will give you a polygon!
-            </p>
-                <input type="number" placeholder="1 to 10" id="num">
-                <button type="submit" id="submitnum" onclick="validation(); getShape();">Enter</button>
-                <button type="reset" value="Reset data"onclick="resetbtn()">Reset</button><br>
-                <span id="display"></span>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
+        
         <script src="scripts/htmlinclude.js"></script>
     </body>
 </html>
