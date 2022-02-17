@@ -1,10 +1,14 @@
+//launch script on load
 object.onload = function(){display()};
+
+//display and get number from user
 function display()
 {
     var number = window.prompt("Hello! The Aquamarine Monkeys would love to get a number between 1 and 10! This will give you a polygon!");
     roundNum(number);
 }
 
+//make sure number is between 1 and 10
 function validation(shape)
 {
     if(shape < 1 || shape > 10)
@@ -14,6 +18,7 @@ function validation(shape)
     }
 }
 
+//round the user number to either positive or non decimal 
 function roundNum(number)
 {
     let shape = Math.round(Math.abs(number));
@@ -21,6 +26,7 @@ function roundNum(number)
     getShape(shape);
 }
 
+//get the shape based on user number 
 function getShape(number)
 {
     do{
@@ -75,3 +81,4 @@ function getShape(number)
         }
     }while(yes == true);
 } 
+//I did this code all by my self
