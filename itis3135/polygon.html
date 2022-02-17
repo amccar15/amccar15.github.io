@@ -12,11 +12,13 @@
         </header>
         <main>
             <h1>Polygons!</h1>
-            <p for="number">Hello! The Aquamarine Monkeys would love to get a number between 0 and 10!
+            <p for="number">Hello! The Aquamarine Monkeys would love to get a number between 1 and 10!
                 This will give you a polygon!
             </p>
-            <input type="number" placeholder="0 to 10" id="num">
-            <button type="submit" id="submitnum" onclick="validation()">enter</button>
+                <input type="number" placeholder="1 to 10" id="num">
+                <button type="submit" id="submitnum" onclick="validation(); getShape();">Enter</button>
+                <button type="reset" value="Reset data"onclick="resetbtn()">Reset</button><br>
+                <span id="display"></span>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
