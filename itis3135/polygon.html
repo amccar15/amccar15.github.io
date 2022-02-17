@@ -4,13 +4,19 @@
         <meta charset="utf-8">
         <title>Austin McCarter | ITIS 3135 | Polygon</title>
         <link href="styles/default.css" rel="stylesheet">
+        <script src="scripts/polygons.js"></script>
     </head>
     <body>
         <header>
             <div data-include="components/header.html"></div>
         </header>
         <main>
-            
+            <h1>Polygons!</h1>
+            <p for="number">Hello! The Aquamarine Monkeys would love to get a number between 0 and 10!
+                This will give you a polygon!
+            </p>
+            <input type="number" placeholder="0 to 10" id="num">
+            <button type="submit" id="submitnum" onclick="validation()">enter</button>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
