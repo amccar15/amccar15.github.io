@@ -40,18 +40,33 @@ ul
 footer 
 {
     text-align: center;
-
+    height: 142px;
 }
-.topnav 
+
+hr
+{
+  border-style: double;
+}
+
+.validation
+{
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px;
+}
+
+.bottomnav 
 {
     background-color: #87babf;
     overflow: hidden;
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-.topnav a 
+.bottomnav a 
 {
-    float: left;
-    display: block;
+    display:inline-block;
     color: #03045e;
     text-align: center;
     padding: 18px 20px;
@@ -59,7 +74,7 @@ footer
     font-size: 17px;
 }
 
-.topnav-logo 
+.bottomnav-logo 
 {
     color:rgb(37, 67, 201);
     padding:0px;
@@ -69,19 +84,19 @@ footer
     float: left;
 }
 
-.topnav a:hover 
+.bottomnav a:hover 
 {
     background-color: rgb(37, 67, 201);
     color: #FFEEC9;
 }
 
-.topnav a.active 
+.bottomnav a.active 
 {
     background-color: #03045e;
     color: gray;
 }
 
-.navbar-logo 
+.bottomnav-logo 
 {
     color: #fff;
     justify-self: start;
@@ -91,7 +106,7 @@ footer
     align-items: center;
 }
 
-.topnav .icon 
+.bottomnav .icon 
 {
     display: none;
 }
