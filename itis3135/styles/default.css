@@ -308,6 +308,8 @@ tbody tr:nth-child(odd)
   background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.4));
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  padding: 15px;
 }
 
 .operator
@@ -315,4 +317,10 @@ tbody tr:nth-child(odd)
   color: #333;
   background-color: #2e86c0;
   border-color: #337cac;
+}
+
+.equal 
+{
+  grid-area: 2/4/6/5;
+  height: 100%;
 }
