@@ -275,3 +275,44 @@ tbody tr:nth-child(odd)
   display: inline-block;
   padding: 10px;
 }
+
+.calculator
+{
+  border: 1px black;
+  position: relative;
+  border-radius: 5px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 4em;
+  width: 400px;
+}
+
+.cal_display
+{
+  width: 100%;
+  border-radius: 1px;
+  text-align: right;
+  background-color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.cal_btn 
+{
+  height: 60px;
+  background-color: black;
+  border: 1px black;
+  background-color: transparent;
+  font-size: 2em;
+  color: #333;
+  background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.4));
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.operator
+{
+  color: #333;
+  background-color: #2e86c0;
+  border-color: #337cac;
+}
