@@ -278,49 +278,86 @@ tbody tr:nth-child(odd)
 
 .calculator
 {
-  border: 1px black;
-  position: relative;
-  border-radius: 5px;
-  align-items: center;
-  margin: 0 auto;
-  padding: 4em;
-  width: 400px;
+  max-width: 400px;
+  margin: 10vh auto 0 auto;
+  box-shadow: 0px 0px 43px 17px;
 }
 
-.cal_display
+.displaycalc
 {
-  width: 100%;
-  border-radius: 1px;
   text-align: right;
-  background-color: white;
-  padding-right: 20px;
-  padding-left: 20px;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
 }
 
-.cal_btn 
+.cal_btn
 {
-  height: 60px;
-  background-color: black;
-  border: 1px black;
-  background-color: transparent;
-  font-size: 2em;
-  color: #333;
-  background-image: linear-gradient(to bottom, transparent, transparent 50%, rgba(0,0,0,0.4));
   display: grid;
+  border-bottom: 1px solid #87babf;
+  border-left: 1px solid #87babf;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-gap: 5px;
-  padding: 15px;
 }
 
-.operator
+.cal_btn > div
 {
-  color: #333;
-  background-color: #2e86c0;
-  border-color: #337cac;
+  border-top: 1px solid #87babf;
+  border-right: 1px solid #87babf;
 }
 
-.equal 
+.cal_btn:hover
 {
+  transition: 0.5s ease-in-out;
+}
+
+.buttons
+{
+  border-radius: 50%;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  font-size: 2em;
+  background-color: rgb(37, 67, 201);;
+  color: white;
+}
+button:hover
+{
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.equal
+{
+  background-color: rgb(85, 85, 255);
+  color: white;
   grid-area: 2/4/6/5;
-  height: 100%;
+}
+
+.operator 
+{
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  font-size: 2em;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.decimal 
+{
+  font-size: 2em;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.all-clear
+{
+  background-color: blue;
+  font-size: 2em;
+  color: white;
 }
