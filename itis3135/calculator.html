@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Austin McCarter | ITIS 3135 | Calculator
+        </title>
+        <link rel="stylesheet" href="styles/default.css">
+        <link rel="shortcut icon" href="images/monkeylogo-removebg.png">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2> Calculate Something! </h2>
+            <div class="calculator">
+                <input type="text" value="" disabled class="displaycalc" />
+                    <div class="cal_btn">
+                        <button class="all-clear" type="button" value="all-clear">AC</button>
+                        <button class="decimal" type="button"  value=".">.</button>
+                        <button class="equal operator" type="button" value="=">=</button>
+
+                        <button class="operator" type="button" value="+">+</button>
+                        <button class="operator" type="button" value="-">-</button>
+                        <button class="operator" type="button" value="*">&times;</button>
+                        <button class="operator" type="button" value="/">&divide;</button>
+
+                        <button class="buttons" type="button" value="7">7</button>
+                        <button class="buttons" type="button" value="8">8</button>
+                        <button class="buttons" type="button" value="9">9</button>
+
+                        <button class="buttons" type="button" value="4">4</button>
+                        <button class="buttons" type="button" value="5">5</button>
+                        <button class="buttons" type="button" value="6">6</button>
+
+                        <button class="buttons" type="button" value="1">1</button>
+                        <button class="buttons" type="button" value="2">2</button>
+                        <button class="buttons" type="button" value="3">3</button>
+
+                        <button class="buttons" type="button" value="0">0</button>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/htmlinclude.js"></script>
+        <script src="scripts/officalcalculator.js"></script>
+    </body>
+</html>
