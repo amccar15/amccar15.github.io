@@ -6,6 +6,7 @@
             Austin McCarter | ITIS 3135 | Calculator
         </title>
         <link rel="shortcut icon" href="images/monkeylogo-removebg.png">
+        <link rel="stylesheet" href="styles/default.css">
     </head>
     <body>
         <header>
@@ -14,30 +15,31 @@
         <main>
             <h2> Calculator Try! </h2>
             <div class="calculator">
-                <input type="text" value="" disabled class="displaycalc" />
+                <span id="display"></span>
+                <span id="displayOP"></span>
                     <div class="cal_btn">
-                        <button class="all-clear" type="button" value="all-clear">AC</button>
-                        <button type="button" class="decimal" value=".">.</button>
-                        <button class="equal operator" type="button" value="=">=</button>
+                        <button id="all-clear" onclick="allclear()">AC</button>
+                        <button id="decimal">.</button>
+                        <button id="equal" onclick="calculate()">=</button>
 
-                        <button class="operator" type="button" value="+">+</button>
-                        <button class="operator" type="button" value="-">-</button>
-                        <button class="operator" type="button" value="*">&times;</button>
-                        <button class="operator" type="button" value="/">&divide;</button>
+                        <button id="plus" onclick="getOperator(this.value)" value="+">+</button>
+                        <button id="minus" onclick="getOperator(this.value)" value="-">-</button>
+                        <button id="times" onclick="getOperator(this.vaue)" value="*">&times;</button>
+                        <button id="divide" onclick="getOperator(this.value)" value="/">&divide;</button>
 
-                        <button id="seven" onclick="getNumber()">7</button>
-                        <button id="eight" onclick="getNumber()">8</button>
-                        <button id="nine" onclick="getNumber()">9</button>
+                        <button id="button7" onclick="getNumber(this.value)" value="7">7</button>
+                        <button id="button8" onclick="getNumber(this.value)" value="8">8</button>
+                        <button id="button9" onclick="getNumber(this.value)" value="9">9</button>
 
-                        <button id="four"conclick="getNumber()">4</button>
-                        <button id="five" onclick="getNumber()">5</button>
-                        <button id="six" onclick="getNumber()">6</button>
+                        <button id="button4" onclick="getNumber(this.value)" value="4">4</button>
+                        <button id="button5" onclick="getNumber(this.value)" value="5">5</button>
+                        <button id="button6" onclick="getNumber(this.value)" value="6">6</button>
 
-                        <button id="one" onclick="getNumber()">1</button>
-                        <button id="two" onclick="getNumber()">2</button>
-                        <button id="three" onclick="getNumber()">3</button>
+                        <button id="button1" onclick="getNumber(this.value)" value="1">1</button>
+                        <button id="button2" onclick="getNumber(this.value)" value="2">2</button>
+                        <button id="button3" onclick="getNumber(this.value)" value="3">3</button>
 
-                        <button type="button" value="0">0</button>
+                        <button id="button0" onclick="getNumber(this.value)" value="0">0</button>
                     </div>
             </div>
         </main>
