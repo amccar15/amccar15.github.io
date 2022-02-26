@@ -1,45 +1,69 @@
-const calculator =
-{
-    number: 0,
-    operator: null
-};
+
+   var number1 = 0;
+   var append = 0;
+   var secondNum = 0;
+   var operator = null;
 
 function getNumber(value)
 {
-    calculator.number = value;
-    console.log(calculator.number);
-    return calculator.number;
+    if(number1 == 0)
+    {
+        number1 = value;
+        display(number1);
+        return number1;
+    }
+    if(operator == null)
+    {
+        secondNum = value;
+        display(secondNum);
+        return secondNum;
+    }
+    else
+    {
+        number1 = 0;
+        secondNum = 0;
+    }
 }
 function getOperator(value)
 {
-    calculator.operator = value;
-    return calculator.operator;
+    operator = value;
+    return operator;
 }
 function allclear()
 {
     document.getElementById('display').innerHTML = "";
-    document.getElementById('displayOP').innerHTML = "";
-    calculator.number = 0;
-    calculator.operator = null;
+    number1 = 0;
+    secondNum = 0;
+    operator = null;
 }
 function display(displayNum)
 {
-    if(calculator.number != 0)
-    {
-        document.getElementById('display').innerHTML += displayNum;
-    }
-     else if(calculator.number == 0)
-    {
-        document.getElementById('display').innerHTML = displayNum;
-    }
+    document.getElementById('display').innerHTML += displayNum;
 }
-
-display();
 
 function calculate()
 {
-    if(getOperator() == '+')
+    var result;
+    if(operator == '+')
     {
-        console.log('plus');
+        result = +number1 + +secondNum;
+        console.log(number1);
+        console.log(secondNum);
+        return display(result);
+    }
+    if(operator == '-')
+    {
+        result = number1 - secondNum;
+        return display(result);
+    }
+    if(operator == '*')
+    {
+        result = number1 * secondNum;
+        return display(result);
+    }
+    if(operator == "/")
+    {
+        result = number1 * secondNum;
+        return display(result);
     }
 }
