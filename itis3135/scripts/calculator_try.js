@@ -12,7 +12,13 @@ function getNumber(value)
         display(number1);
         return number1;
     }
-    if(operator == null)
+    if(operator == null) 
+    {
+        number1 += value;
+        display(number1);
+        return number1;
+    }
+    if(secondNum == 0 && operator != null) 
     {
         secondNum = value;
         display(secondNum);
@@ -20,50 +26,57 @@ function getNumber(value)
     }
     else
     {
-        number1 = 0;
-        secondNum = 0;
+        secondNum += value;
+        display(secondNum);
+        return secondNum;
     }
 }
 function getOperator(value)
 {
     operator = value;
+    displayOP(operator);
     return operator;
 }
 function allclear()
 {
-    document.getElementById('display').innerHTML = "";
+    document.getElementById('display').innerHTML = "0";
     number1 = 0;
     secondNum = 0;
     operator = null;
 }
 function display(displayNum)
 {
-    document.getElementById('display').innerHTML += displayNum;
+    document.getElementById('display').innerHTML = displayNum;
 }
-
+function displayOP()
+{
+    document.getElementById('display').innerHTML = operator;
+}
+function answer(result)
+{ 
+    document.getElementById('display').innerHTML = result
+}
 function calculate()
 {
     var result;
     if(operator == '+')
     {
         result = +number1 + +secondNum;
-        console.log(number1);
-        console.log(secondNum);
-        return display(result);
+        return answer(result);
     }
     if(operator == '-')
     {
         result = number1 - secondNum;
-        return display(result);
+        return answer(result);
     }
     if(operator == '*')
     {
         result = number1 * secondNum;
-        return display(result);
+        return answer(result);
     }
     if(operator == "/")
     {
-        result = number1 * secondNum;
-        return display(result);
+        result = number1 / secondNum;
+        return answer(result);
     }
 }
