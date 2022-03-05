@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Austin McCarter | ITIS 3135 | Aquamarine Monkey | Arrays
+        </title>
+        <link href="styles/default.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div data-include="components/header.html"></div>
+        </header>
+        <main>
+            <h2>Arrays</h2>
+            <label for="employees">Employee Names:</label>
+            <select id="employee" name="employee">
+                <option value="Vanessa">Vanessa</option>
+                <option value="Austin">Austin</option>
+                <option value="Rachel">Rachel</option>
+            </select>
+            <label for="salary">Salary in thousands:</label>
+            <input type="number" id="salary" name="salary">
+            <button onclick="addSalary()" id="add_salary">Add Salary</button>
+            <button onclick="displayResults()" id="display_results">Display Results</button>
+            <button onclick="displaySalary()" id="display_salary">Display Salary</button>
+            <div id="results"></div>
+            <table id="table_results"></table>
+        </main> 
+        <footer>
+            <div data-include="components/footer.html"></div>
+        </footer>
+        <script src="scripts/htmlinclude.js"></script>
+        <script src="scripts/arrays.js"></script>
+    </body>
+</html>
