@@ -13,6 +13,18 @@ function addSalary()
         alert("Please enter a valid salary");
         salaryInput = "";
     }
+    else if(personSelect == 'Vanessa')
+    {
+        salaries[0] = salaryInput;
+    }
+    else if(personSelect == 'Austin')
+    {
+        salaries[1] = salaryInput;
+    }
+    else if(personSelect == 'Rachel')
+    {
+        salaries[2] = salaryInput;
+    }
 }
 
 function displayResults()
