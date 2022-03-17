@@ -63,6 +63,7 @@ hr
     position: fixed;
     bottom: 0;
     width: 100%;
+    right: 1px;
 }
 .bottomnav a 
 {
@@ -77,10 +78,10 @@ hr
 .bottomnav-logo 
 {
     color:rgb(37, 67, 201);
-    padding:0px;
+    padding: 0px;
     margin: 0px;
     height: 55px;
-    width: 50px;
+    width: 55px;
     float: left;
 }
 

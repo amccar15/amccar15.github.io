@@ -1,21 +1,11 @@
 body
 {
-    background-color: #d9d9d9;
+    background-color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #FFE3B7;
     height: 100%;
     margin: 1em;
     overflow: scroll;
-}
-
-.bg 
-{
-    background: url(../images/1131274.jpg) no-repeat;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
 }
 
 h1,h2
@@ -38,7 +28,6 @@ to convert hex code to fitlers to change image color*/
 
 .logo-right
 {
-    align-items: right;
     float: right;
     height: 150px;
     width: 150px;
@@ -74,6 +63,7 @@ figure
 footer
 {
     text-align: center;
+    height: 400px;
 }
 
 .topnav 
@@ -156,9 +146,10 @@ footer
   margin-bottom: 10px;
 }
 
-.btn:hover 
+.btn:hover a:hover
 {
   opacity: 1;
+  color: aliceblue;
 }
 
 .contact-container
@@ -171,4 +162,10 @@ hr
 {
     margin: 1em;
     border-style: inset;
+}
+
+.splide__slide img
+{
+    width: 100%;
+    height: 50em;
 }
