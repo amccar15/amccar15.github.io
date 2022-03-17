@@ -5,14 +5,15 @@
         <title>McCarter Deli & Co</title>
         <link href="styles/companyindex.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-        <script src="components/index.js"></script>
+        <link rel="stylesheet" href="splide-3.6.12/dist/css/splide.min.css">
+        <script src="splide-3.6.12/dist/js/splide.min.js"></script>
     </head>
 
-    <body class="bg">
+    <body>
         <header>
             <h1>McCarter Deli & Co</h1>
-            <img class="logo" src="images/monkeylogo-removebg.png">
-            <img class="logo-right" src="images/sandwhich-removebg-preview.png">
+            <img class="logo" src="images/monkeylogo-removebg.png" alt="monkey logo">
+            <img class="logo-right" src="images/sandwhich-removebg-preview.png" alt="sandwhich">
             <div class="topnav">
                 <a href="index.html" class="active">We Create More Than Dreams</a>
                 <div id="myLinks">
@@ -38,6 +39,30 @@
                 </p>
                 <hr>
             </div>
+            <div id="image-slider" class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="images/Software-Developer-Software-Engineer-Dice.png" alt="software">
+                              <div>
+                                  Let us develop your website!
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <img src="images/club-sandwich-1-9.jpeg" alt="sandwhich">
+                              <div>
+                                  Our most popular club sandwhich
+                              </div>
+                          </li>
+                          <li class="splide__slide">
+                              <img src="images/the-sandwich-shop.jpeg" alt="shop">
+                              <div>
+                                  This is one of our locations!
+                              </div>
+                          </li>
+                      </ul>
+                </div>
+              </div>
             <figure>
                 <figcaption>What do we pride ourselves in?</figcaption>
                 <ul>
@@ -70,14 +95,20 @@
             <hr>
         </main>
         <footer>
-            <p>McCarter Deli & Co &copy;2022.</p>
+            <p>
+                Designed by McCarter Deli & Co &copy;2022.
+            </p>
             <p>
                 <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                  <img src="images/button_validation_css.png" alt="css"/></a>
-        
+                    <img src="images/button_validation_css.png" alt="css"/></a>
+
                 <a href="https://validator.w3.org/check?uri=referer">
-                  <img src="images/button_validation_html5.png" alt="html5"/> </a>
-              </p>
+                    <img src="images/button_validation_html5.png" alt="html5"/> </a>
+            </p>
         </footer>
+        <script>
+            new Splide( '#image-slider' ).mount();
+        </script>
+        <script src="components/index.js"></script>
     </body>
 </html>
