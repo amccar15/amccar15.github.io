@@ -1,6 +1,5 @@
 body
 {
-    text-align: center;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 1em;
@@ -55,7 +54,7 @@ body
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: 22px;
     padding: 16px;
     color: white;
     font-weight: bold;
@@ -71,13 +70,20 @@ body
     border-radius: 3px 0 0 3px;
 }
 
+.prev:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
 .text 
 {
     color: #f2f2f2;
     font-size: 15px;
-    padding: 8px 12px;
+    padding-left: 20px;
+    padding-right: 20px;
     position: absolute;
-    bottom: 8px;
+    bottom: 20px;
+    right: 20px;
     width: 100%;
     text-align: center;
   }
