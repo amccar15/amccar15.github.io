@@ -5,45 +5,35 @@
         <title>
             Sate Design & Co
         </title>
-        <link href="default.css">
+        <link href="default.css" rel="stylesheet">
         <script src="../mccarterdeliandco.tech/splide-3.6.12/dist/js/splide.min.js"></script>
     </head>
     <body>
         <header>
-            <img src="images/Logo.png" alt="logo" style="align-items: center; width: 100px; height: 100px;">
-            <div class="topnav">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Quote</a>
-                    <a href="#">Products</a>
-                </nav>
-            </div>
+            <nav class="topnav">
+                <img id="logo" src="images/Logo.png" alt="logo">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Quote</a>
+                <a href="#">Products</a>
+            </nav>
            <div class="slideContainer">
                
                 <div class="mySlides fade">
-                    <div class="numberText">1 / 3</div>
-                    <img src="images/shoeOne.png" alt="shoe" style="width: 100%;">
+                    <img src="images/IMG_0378_ccexpress.jpeg" alt="shoe" style="width: 100%;">
                     <div class="text">Caption One</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numberText">2 / 3</div>
                     <img src="images/carPassat_ccexpress.jpeg" alt="car" style="width: 100%;">
                     <div class="text">Caption Two</div>
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numberText">3 / 3</div>
                     <img src="images/shoeTwo.jpeg" alt="shoe" style="width: 100%;">
                     <div class="text">Caption Three</div>
                 </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                <br>
-
                 <div style="text-align: center;">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
@@ -68,20 +58,23 @@
                        slideIndex = 1;
                    }
                    slides[slideIndex-1].style.display = "block";
-                   setTimeout(showSlides, 2000);
+                   setTimeout(showSlides, 4000);
                }
            </script>
         </header>
         <main>
             <div class="aboutContainer">
-                <img src="" alt="client photo">
-                <h1>About</h1>
-                <p>
-                    This is will be filled once my client sends me his about me summary, Lorem ipsum dolor sit amet, tempor prodesset eos no. 
-                    Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.                
-                </p>
+                <div class="imgContainer">
+                    <img src="" alt="client photo">
+                </div>
+                <div class="aboutText">
+                    <h1>About</h1>
+                    <p>
+                        This is will be filled once my client sends me his about me summary, Lorem ipsum dolor sit amet, tempor prodesset eos no. 
+                        Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.                
+                    </p>
+                </div>
             </div>
-
             <div class="row">
                 <div class="column">
                     <div class="card">
