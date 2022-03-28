@@ -103,31 +103,23 @@ body
 .aboutContainer
 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: inline-flex;
   margin: 1em;
   padding: 1em;
 }
-
-.imgContainer
-{
-  float: left;
-}
-
 .aboutText
 {
-  position: relative;
-  left: 80px;
+  padding: 1em;
 }
 
 .column
 {
   float: left;
   width: 33.3%;
-  margin-left: 1em;
-  margin-bottom: 16px;
   padding: 0 8px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
   .column
   {
     width: 100%;
