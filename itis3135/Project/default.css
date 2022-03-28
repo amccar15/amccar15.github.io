@@ -137,3 +137,35 @@ body
 {
   padding: 0 16px;
 }
+
+footer
+{
+  text-align: center;
+}
+
+.fa 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  border-radius: 75%;
+  text-decoration: none;
+}
+
+.fa:hover
+{
+  opacity: 0.7;
+}
+
+.fa-instagram
+{
+  background-color: #8a3ab9;
+  color: white;
+}
+
+.fa-youtube
+{
+  color: #cd201f;
+  box-shadow: 0 0 24px 0 #cd201f;
+}
