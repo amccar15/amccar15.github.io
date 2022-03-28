@@ -116,7 +116,7 @@ body
 {
   float: left;
   width: 33.3%;
-  padding: 0 8px;
+  padding: 0 5em;
 }
 
 @media screen and (max-width: 800px) {
@@ -129,10 +129,11 @@ body
 
 .card
 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 .textContainer
 {
-    padding: 0 16px;
+  padding: 0 16px;
 }
