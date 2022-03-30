@@ -7,10 +7,11 @@
         </title>
         <link href="default.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <header>
-            <nav class="topnav">
+            <nav class="topnavOther">
                 <img id="logo" src="images/Logo.png" alt="logo">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -20,7 +21,51 @@
             </nav>
         </header>
         <main>
-
+            <div class="float-container">
+                <div class="float-child">
+                    <div class="form-style-10">
+                        <h1>Get a Quote</h1>
+                        <form>
+                            <div class="section">
+                                <span>1</span>
+                                First & Last Name
+                            </div>
+                            <div class="inner-wrap">
+                                <label>First Name</label>
+                                <input type="text" name="fname" placeholder="First name" required>
+                                <label>Last name</label>
+                                <input type="text" name="lname" placeholder="Last name" required>
+                            </div>
+                            <div class="section">
+                                <span>2</span>
+                                Email & Phone
+                            </div>
+                            <div class="inner-wrap">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" placeholder="example@email.com" required>
+                                <label for="phone">Phone</label>
+                                <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                            </div>
+                            <div class="section">
+                                <span>3</span>
+                                Message
+                            </div>
+                            <div class="inner-wrap">
+                                <label for="request">Describe what you want designed, and we will get back to you on how much it may cost!</label>
+                                <textarea class="input-field" id="request" name="request" rows="5" cols="50"></textarea>
+                            </div>
+                            <div class="button-section">
+                                <input type="submit" name="Sign Up" />
+                                <input type="reset">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="float-child">
+                    <img id="form-photo" src="images/shoeOne.jpeg" alt="photo">
+                    <img id="form-photo" src="images/IMG_0380.jpeg">
+                </div>
+            </div>
         </main>
         <footer>
             <hr>
