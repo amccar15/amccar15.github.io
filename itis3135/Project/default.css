@@ -205,6 +205,14 @@ footer
   vertical-align: middle;
 }
 
+.feedback-card
+{
+  width: 20em;
+  padding: 1em;
+  flex: 25%;
+  box-shadow: 0 8px 4px 0px;
+}
+
 .float-container
 {
   margin: 1em;
