@@ -7,17 +7,57 @@
         </title>
         <link rel="shortcut icon" href="images/monkeylogo-removebg.png">
         <link rel="stylesheet" href="styles/default.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
             <div data-include="components/header.html"></div>
         </header>
         <main>
-            
+            <div class="container">
+                <h1>Jquery slideshow</h1>
+                <ul class="slider-inner">
+                    <li>
+                        <img src="images/slideshow/0EFAE759-35FD-4B37-B367-9FF336510C03_1_105.jpeg" alt="photo">
+                    </li>
+                    <li>
+                        <img src="images/slideshow/42EBEA98-C2A0-48CF-8CFD-A00C1343C936_1_105_c_.jpeg" alt="photo">
+                    </li>
+                    <li>
+                        <img src="images/slideshow/95310B14-F0F3-4CD2-A4F8-674632790289_1_105_c_.jpeg" alt="photo">
+                    </li>
+                    <li>
+                        <img src="images/slideshow/B1F1457D-1743-431B-9E80-3D4F38FA5D0A_1_105_c_.jpeg" alt="photo">
+                    </li>
+                    <li>
+                        <img src="images/slideshow/DA0DFA08-76F6-48DB-90EC-1883D9912C1A_1_105_c_.jpeg" alt="photo">
+                    </li>
+                    <li>
+                        <img src="images/slideshow/IMG_0304.jpeg" alt="photo">
+                    </li>
+                </ul>
+            </div>
         </main>
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
         <script src="scripts/htmlinclude.js"></script>
+        <script src="scripts/slideshow.js"></script>
     </body>
 </html>
+<style>
+    .container
+    {
+        margin: 50px auto;
+        position: relative;
+        width: 850px;
+        height: 950px;
+        padding: 10px;
+        box-shadow: 0 4px 8px 0;
+    }
+    .slider-inner
+    {
+        position: absolute;
+        margin: 10px 10px 10px 10px;
+    }
+</style>
