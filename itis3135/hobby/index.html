@@ -8,21 +8,22 @@
     </head>
     <body>
         <header>
-            <div class="topnav-wrapper">
+            <div class="tab">
                 <nav class="topnav">
-                    <a href="#home">Home</a>
-                    <a href="#aboutMe">About Me</a>
-                    <a href="#bestTimes">Best Times</a>
-                    <a href="#how">How?</a>
-                    <a href="#why">Why?</a>
+                    <button class="tablinks" onclick="openTab(event, 'home')" id="default">Home</button>
+                    <button class="tablinks" onclick="openTab(event, 'aboutMe')">About Me</button>
+                    <button class="tablinks" onclick="openTab(event, 'bestTimes')">Best Times</button>
+                    <button class="tablinks" onclick="openTab(event, 'how')">How?</button>
+                    <button class="tablinks" onclick="openTab(event, 'why')">Why?</button>
                 </nav>
             </div>
         </header>
         <main id="myDivs">
-            <div class="home page active">
+            <div id="home" class="tabcontent">
                 <h1>
                     Home
                 </h1>
+                <hr>
                 <p>
                     Welcome! My passion for cars has been with me since I was a kid, and now I have spent plenty of time and money on it but still love it every day!
                 </p>
@@ -32,8 +33,9 @@
                 </figure>
             </div>
 
-            <div class="aboutMe page">
+            <div id="aboutMe" class="tabcontent">
                 <h1>About Me</h1>
+                <hr>
                 <p>
                     My passion for cars started early, it did not start with modify cars. It started by just fixing them, which is defiently not as fun but I found joy in working on them,
                     When I was finally of age to drive I was luckly given a car, but spent the next year saving up to buy a car that I wanted. I ended up purchasing a 2004 BMW E46, which was
@@ -50,8 +52,9 @@
                 </figure>
             </div>
 
-            <div class="bestTimes page">
+            <div id="bestTimes" class="tabcontent">
                 <h1>Best Times</h1>
+                <hr>
                 <p>
                     So its hard to tell but I would say right now I am in and approaching the best time with my car. Last year I start my journey of turbo charging my first car,
                     it went pretty well and the car was operational for acouple months. I ended up having a little too much fun with it, sprung an oil leak under load and starved the motor.
@@ -71,8 +74,9 @@
                 </figure>
             </div>
 
-            <div class="how page">
+            <div id="how" class="tabcontent">
                 <h1>How?</h1>
+                <hr>
                 <p>
                     There is nothing special about what I do, anybody can do it. Sometimes it is hard to find the time to work on the car, but its not going anywhere so there is 
                     no rush. Things take time to happen so no matter what is being worked on, anything that is worth working on should not be rushed it should be done right.
@@ -83,8 +87,9 @@
                 </figure>
             </div>
 
-            <div class="why page">
+            <div id="why" class="tabcontent">
                 <h1>Why?</h1>
+                <hr>
                 <p>
                     For a lot of people working on cars seems pretty useless, they are vehicles and are built to take you from A to B, so why waste all this time and money on something like
                     that? It is something I enjoy, it is as simple as that. Driving, working on, and being around other cool cars brings a lot of joy to my life and thats all you can ask for in
@@ -127,7 +132,7 @@
             </div>
         </main>
         <footer>
-            <p><a href="mccarterdeliandco.tech/">Designed by McCarter Deli & Co &copy;2022.</a></p>
+            <a href="mccarterdeliandco.tech/">Designed by McCarter Deli & Co &copy;2022.</a>
             <form>
                 <input class="button" type="button" onclick="window.location.href='https://jigsaw.w3.org/css-validator/check/referer';" value="CSS">
                 <input class="button" type="button" onclick="window.location.href='https://validator.w3.org/check?uri=referer';" value="HTML">
@@ -144,9 +149,11 @@
         margin: 0;
         padding: 0;
     }
-    .topnav-wrapper
+    .tab
     {
         height: 100%;
+        overflow: hidden;
+        border: 1px solid #ccc;
     }
     .topnav
     {
@@ -156,30 +163,42 @@
         width: 100%;
         background-color: #000080;
     }
-    .topnav a
+    .topnav button
     {
         display: inline-block;
-        color: #FFFF;
         text-align: center;
-        padding: 18px 20px;
+        padding: 18px 15px;
         margin-left: 1em;
-        text-decoration: none;
         font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: inherit;
+        color: #ccc;
     }
-    .topnav a:hover
+    .topnav button:hover
     {
         background-color: #2142AB;
         color: #E5EAF5;
     }
-    .home, .aboutMe, .bestTimes, .how, .why
+    .topnav button.active
     {
-        margin-top: 100px;
+        background-color: #2142AB;
+    }
+    #home, #aboutMe, #bestTimes, #how, #why
+    {
+        margin-top: 50px;
         text-align: center;
+    }
+    .tabcontent
+    {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
     }
     p
     {
         margin: 1em;
-        text-align: left;
+        text-align: center;
     }
     .homeImage
     {
@@ -225,7 +244,6 @@
     }
     footer
     {
-        margin: 0 auto;
         text-align: center;
     }
     .button
@@ -244,17 +262,23 @@
     }
 </style>
 <script>
-    var divContainer = documet.getElementsById("myDivs");
-
-    var pages = divContainer.getElementsByClassName("page");
-
-    for(var i = 0; i < pages.length; i++)
+    function openTab(e, tabName)
     {
-        pages[i],addEventListener("click", function()
+        var i, tabContent, tablinks;
+
+        tabContent = document.getElementsByClassName('tabcontent');
+        for(i = 0; i < tabContent.length; i++)
         {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
+            tabContent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName('tablinks');
+        for(i = 0; i < tablinks.length; i++)
+        {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        e.currentTarget.className += " active";
     }
+
+    document.getElementById("default").click();
 </script>
