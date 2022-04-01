@@ -42,6 +42,7 @@
            </div>
            <script>
                let slideIndex = 0;
+               let currentSlide = 1;
                showSlides();
                
                function showSlides()
@@ -53,6 +54,7 @@
                        slides[i].style.display = "none";
                    }
                    slideIndex++;
+                   currentSlide++;
                    if(slideIndex > slides.length)
                    {
                        slideIndex = 1;

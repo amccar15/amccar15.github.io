@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Austin McCarter's Cars
+        </title>
+    </head>
+    <body>
+        <header>
+            <div class="topnav-wrapper">
+                <nav class="topnav">
+                    <a href="#home">Home</a>
+                    <a href="#aboutMe">About Me</a>
+                    <a href="#bestTimes">Best Times</a>
+                    <a href="#how">How?</a>
+                    <a href="#why">Why?</a>
+                </nav>
+            </div>
+        </header>
+        <main id="myDivs">
+            <div class="home page active">
+                <h1>
+                    Home
+                </h1>
+                <p>
+                    Welcome! My passion for cars has been with me since I was a kid, and now I have spent plenty of time and money on it but still love it every day!
+                </p>
+                <figure class="homeImage">
+                    <img src="images/car1.jpeg" alt="photo">
+                    <figurecaption>This is my 2013 FRS</figurecaption>
+                </figure>
+            </div>
+
+            <div class="aboutMe page">
+                <h1>About Me</h1>
+                <p>
+                    My passion for cars started early, it did not start with modify cars. It started by just fixing them, which is defiently not as fun but I found joy in working on them,
+                    When I was finally of age to drive I was luckly given a car, but spent the next year saving up to buy a car that I wanted. I ended up purchasing a 2004 BMW E46, which was
+                    a terrible idea, the car was a lemon and barely made it a year before I had to buy another one. Fortunately this led me to the FRS, which I bought in 2018 and have loved ever since!
+                </p>
+                <figure class="figImage1">
+                    <img src="images/IMG_20180424_152020.jpg" alt="photo">
+                    <figurecaption>This was my E46 right before selling it</figurecaption>
+                </figure>
+                <br>
+                <figure class="figImage2">
+                    <img src="images/Snapchat-1641530991.jpg" alt="photo">
+                    <figurecaption>This was after having the FRS for acouple months</figurecaption>
+                </figure>
+            </div>
+
+            <div class="bestTimes page">
+                <h1>Best Times</h1>
+                <p>
+                    So its hard to tell but I would say right now I am in and approaching the best time with my car. Last year I start my journey of turbo charging my first car,
+                    it went pretty well and the car was operational for acouple months. I ended up having a little too much fun with it, sprung an oil leak under load and starved the motor.
+                    Most of the times thats a sign of some of the worst times, but I did the opposite. I pulled the motor and have spent the past several months rebuilding it, I am even
+                    more connected to the car than I was before and the future is fast and fun from here.
+                </p>
+                <figure class="videoContainer">
+                    <video width="400" height="300" controls>
+                        <source src="images/filtered-26718C78-EAC5-40DB-A3A4-C70EBAB62AAE.mp4" type="video/mp4">
+                    </video>
+                    <figurecaption>This was after we got the car running</figurecaption>
+                </figure>
+                <br>
+                <figure class="figImage3">
+                    <img src="images/IMG_0305.jpeg" alt="photo">
+                    <figurecaption>This was after I got the engine out</figurecaption>
+                </figure>
+            </div>
+
+            <div class="how page">
+                <h1>How?</h1>
+                <p>
+                    There is nothing special about what I do, anybody can do it. Sometimes it is hard to find the time to work on the car, but its not going anywhere so there is 
+                    no rush. Things take time to happen so no matter what is being worked on, anything that is worth working on should not be rushed it should be done right.
+                </p>
+                <figure class="figImage4">
+                    <img src="images/IMG_0887 - Copy.jpg" alt="photo">
+                    <figurecaption>One of my favorite photos currently</figurecaption>
+                </figure>
+            </div>
+
+            <div class="why page">
+                <h1>Why?</h1>
+                <p>
+                    For a lot of people working on cars seems pretty useless, they are vehicles and are built to take you from A to B, so why waste all this time and money on something like
+                    that? It is something I enjoy, it is as simple as that. Driving, working on, and being around other cool cars brings a lot of joy to my life and thats all you can ask for in
+                    life.
+                </p>
+                <div class="slideContainer">
+                    <div class="mySlides fade">
+                        <img src="images/DSC_0211 (2)_Original.jpg" alt="photo">
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <img src="images/IMG_20190724_200211_1_2.jpg" alt="photo">
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <img src="images/photo17.png" alt="photo">
+                    </div>
+                </div>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+               
+                    function showSlides()
+                    {
+                        let i;
+                        let slides = document.getElementsByClassName('mySlides');
+                        for(i = 0; i < slides.length; i++)
+                        {
+                            slides[i].style.display = "none";
+                        }
+                        slideIndex++;
+                        if(slideIndex > slides.length)
+                        {
+                            slideIndex = 1;
+                        }
+                        slides[slideIndex-1].style.display = "block";
+                        setTimeout(showSlides, 4000);
+                    }
+                </script>
+            </div>
+        </main>
+        <footer>
+            <p><a href="mccarterdeliandco.tech/">Designed by McCarter Deli & Co &copy;2022.</a></p>
+            <form>
+                <input class="button" type="button" onclick="window.location.href='https://jigsaw.w3.org/css-validator/check/referer';" value="CSS">
+                <input class="button" type="button" onclick="window.location.href='https://validator.w3.org/check?uri=referer';" value="HTML">
+            </form>
+        </footer>
+    </body>
+</html>
+<style>
+    body
+    {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #D3D3D3;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .topnav-wrapper
+    {
+        height: 100%;
+    }
+    .topnav
+    {
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #000080;
+    }
+    .topnav a
+    {
+        display: inline-block;
+        color: #FFFF;
+        text-align: center;
+        padding: 18px 20px;
+        margin-left: 1em;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover
+    {
+        background-color: #2142AB;
+        color: #E5EAF5;
+    }
+    .home, .aboutMe, .bestTimes, .how, .why
+    {
+        margin-top: 100px;
+        text-align: center;
+    }
+    p
+    {
+        margin: 1em;
+        text-align: left;
+    }
+    .homeImage
+    {
+        box-shadow: 0 4px 8px 0;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .figImage1
+    {
+        width: 591px;
+        box-shadow: 0 4px 8px 0;
+        margin: 0 auto;
+    }
+    .figImage2
+    {
+        width: 627px;
+        box-shadow: 0 4px 8px 0;
+        margin: 0 auto;
+    }
+    .videoContainer
+    {
+        width: 400px;
+        box-shadow: 0 4px 8px 0;
+        margin: 0 auto;
+    }
+    .figImage3
+    {
+        width: 450px;
+        box-shadow: 0 4px 8px 0;
+        margin: 0 auto;
+    }
+    .figImage4
+    {
+        width: 591px;
+        box-shadow: 0 4px 8px 0;
+        margin: 0 auto;
+    }
+    .slideContainer
+    {
+        margin: 0 auto;
+        width: 627px;
+        box-shadow: 0 4px 8px 0;
+    }
+    footer
+    {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .button
+    {
+        background-color: #2142AB;
+        border-radius: 10%;
+        padding: 10px;
+        display: inline-block;
+        font-size: 17px;
+        cursor: pointer;
+        transition: transform .2s;
+    }
+    .button:hover
+    {
+        transform: scale(1.5);
+    }
+</style>
+<script>
+    var divContainer = documet.getElementsById("myDivs");
+
+    var pages = divContainer.getElementsByClassName("page");
+
+    for(var i = 0; i < pages.length; i++)
+    {
+        pages[i],addEventListener("click", function()
+        {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>

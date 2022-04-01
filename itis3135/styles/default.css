@@ -48,6 +48,17 @@ hr
   border-style: double;
 }
 
+a
+{
+  mix-blend-mode: normal;
+  color: royalblue;
+}
+
+a:hover
+{
+  color:#121212;
+}
+
 .validation
 {
     min-height: 100%;
