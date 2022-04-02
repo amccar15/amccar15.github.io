@@ -5,6 +5,128 @@
         <title>
             Austin McCarter's Cars
         </title>
+        <link rel="shortcut icon" href="../images/monkeylogo-removebg.png">
+        <style>
+            body
+            {
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                background-color: #D3D3D3;
+                color: black;
+                margin: 0;
+                padding: 0;
+            }
+            .tab
+            {
+                height: 100%;
+                overflow: hidden;
+                border: 1px solid #ccc;
+            }
+            .topnav
+            {
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: #000080;
+            }
+            .topnav button
+            {
+                display: inline-block;
+                text-align: center;
+                padding: 18px 15px;
+                margin-left: 1em;
+                font-size: 17px;
+                border: none;
+                outline: none;
+                background-color: inherit;
+                color: #ccc;
+            }
+            .topnav button:hover
+            {
+                background-color: #2142AB;
+                color: #E5EAF5;
+            }
+            .topnav button.active
+            {
+                background-color: #2142AB;
+            }
+            #home, #aboutMe, #bestTimes, #how, #why
+            {
+                margin-top: 50px;
+                text-align: center;
+            }
+            .tabcontent
+            {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #ccc;
+            }
+            p
+            {
+                margin: 1em;
+                text-align: center;
+            }
+            .homeImage
+            {
+                box-shadow: 0 4px 8px 0;
+                width: 800px;
+                margin: 0 auto;
+            }
+            .figImage1
+            {
+                width: 591px;
+                box-shadow: 0 4px 8px 0;
+                margin: 0 auto;
+            }
+            .figImage2
+            {
+                width: 627px;
+                box-shadow: 0 4px 8px 0;
+                margin: 0 auto;
+            }
+            .videoContainer
+            {
+                width: 400px;
+                box-shadow: 0 4px 8px 0;
+                margin: 0 auto;
+            }
+            .figImage3
+            {
+                width: 450px;
+                box-shadow: 0 4px 8px 0;
+                margin: 0 auto;
+            }
+            .figImage4
+            {
+                width: 591px;
+                box-shadow: 0 4px 8px 0;
+                margin: 0 auto;
+            }
+            .slideContainer
+            {
+                margin: 0 auto;
+                width: 627px;
+                box-shadow: 0 4px 8px 0;
+            }
+            footer
+            {
+                text-align: center;
+            }
+            .button
+            {
+                background-color: #2142AB;
+                border-radius: 10%;
+                padding: 10px;
+                display: inline-block;
+                font-size: 17px;
+                cursor: pointer;
+                transition: transform .2s;
+            }
+            .button:hover
+            {
+                transform: scale(1.5);
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -29,7 +151,7 @@
                 </p>
                 <figure class="homeImage">
                     <img src="images/car1.jpeg" alt="photo">
-                    <figurecaption>This is my 2013 FRS</figurecaption>
+                    <figcaption>This is my 2013 FRS</figcaption>
                 </figure>
             </div>
 
@@ -43,12 +165,12 @@
                 </p>
                 <figure class="figImage1">
                     <img src="images/IMG_20180424_152020.jpg" alt="photo">
-                    <figurecaption>This was my E46 right before selling it</figurecaption>
+                    <figcaption>This was my E46 right before selling it</figcaption>
                 </figure>
                 <br>
                 <figure class="figImage2">
                     <img src="images/Snapchat-1641530991.jpg" alt="photo">
-                    <figurecaption>This was after having the FRS for acouple months</figurecaption>
+                    <figcaption>This was after having the FRS for acouple months</figcaption>
                 </figure>
             </div>
 
@@ -65,12 +187,12 @@
                     <video width="400" height="300" controls>
                         <source src="images/filtered-26718C78-EAC5-40DB-A3A4-C70EBAB62AAE.mp4" type="video/mp4">
                     </video>
-                    <figurecaption>This was after we got the car running</figurecaption>
+                    <figcaption>This was after we got the car running</figcaption>
                 </figure>
                 <br>
                 <figure class="figImage3">
                     <img src="images/IMG_0305.jpeg" alt="photo">
-                    <figurecaption>This was after I got the engine out</figurecaption>
+                    <figcaption>This was after I got the engine out</figcaption>
                 </figure>
             </div>
 
@@ -82,8 +204,8 @@
                     no rush. Things take time to happen so no matter what is being worked on, anything that is worth working on should not be rushed it should be done right.
                 </p>
                 <figure class="figImage4">
-                    <img src="images/IMG_0887 - Copy.jpg" alt="photo">
-                    <figurecaption>One of my favorite photos currently</figurecaption>
+                    <img src="images/IMG_0887Copy.jpg" alt="photo">
+                    <figcaption>One of my favorite photos currently</figcaption>
                 </figure>
             </div>
 
@@ -97,7 +219,7 @@
                 </p>
                 <div class="slideContainer">
                     <div class="mySlides fade">
-                        <img src="images/DSC_0211 (2)_Original.jpg" alt="photo">
+                        <img src="images/DSC_0211_Original.jpg" alt="photo">
                     </div>
     
                     <div class="mySlides fade">
@@ -137,148 +259,27 @@
                 <input class="button" type="button" onclick="window.location.href='https://jigsaw.w3.org/css-validator/check/referer';" value="CSS">
                 <input class="button" type="button" onclick="window.location.href='https://validator.w3.org/check?uri=referer';" value="HTML">
             </form>
+            <script>
+                function openTab(e, tabName)
+                {
+                    var i, tabContent, tablinks;
+            
+                    tabContent = document.getElementsByClassName('tabcontent');
+                    for(i = 0; i < tabContent.length; i++)
+                    {
+                        tabContent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName('tablinks');
+                    for(i = 0; i < tablinks.length; i++)
+                    {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    e.currentTarget.className += " active";
+                }
+            
+                document.getElementById("default").click();
+            </script>
         </footer>
     </body>
 </html>
-<style>
-    body
-    {
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        background-color: #D3D3D3;
-        color: black;
-        margin: 0;
-        padding: 0;
-    }
-    .tab
-    {
-        height: 100%;
-        overflow: hidden;
-        border: 1px solid #ccc;
-    }
-    .topnav
-    {
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #000080;
-    }
-    .topnav button
-    {
-        display: inline-block;
-        text-align: center;
-        padding: 18px 15px;
-        margin-left: 1em;
-        font-size: 17px;
-        border: none;
-        outline: none;
-        background-color: inherit;
-        color: #ccc;
-    }
-    .topnav button:hover
-    {
-        background-color: #2142AB;
-        color: #E5EAF5;
-    }
-    .topnav button.active
-    {
-        background-color: #2142AB;
-    }
-    #home, #aboutMe, #bestTimes, #how, #why
-    {
-        margin-top: 50px;
-        text-align: center;
-    }
-    .tabcontent
-    {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-    }
-    p
-    {
-        margin: 1em;
-        text-align: center;
-    }
-    .homeImage
-    {
-        box-shadow: 0 4px 8px 0;
-        width: 800px;
-        margin: 0 auto;
-    }
-    .figImage1
-    {
-        width: 591px;
-        box-shadow: 0 4px 8px 0;
-        margin: 0 auto;
-    }
-    .figImage2
-    {
-        width: 627px;
-        box-shadow: 0 4px 8px 0;
-        margin: 0 auto;
-    }
-    .videoContainer
-    {
-        width: 400px;
-        box-shadow: 0 4px 8px 0;
-        margin: 0 auto;
-    }
-    .figImage3
-    {
-        width: 450px;
-        box-shadow: 0 4px 8px 0;
-        margin: 0 auto;
-    }
-    .figImage4
-    {
-        width: 591px;
-        box-shadow: 0 4px 8px 0;
-        margin: 0 auto;
-    }
-    .slideContainer
-    {
-        margin: 0 auto;
-        width: 627px;
-        box-shadow: 0 4px 8px 0;
-    }
-    footer
-    {
-        text-align: center;
-    }
-    .button
-    {
-        background-color: #2142AB;
-        border-radius: 10%;
-        padding: 10px;
-        display: inline-block;
-        font-size: 17px;
-        cursor: pointer;
-        transition: transform .2s;
-    }
-    .button:hover
-    {
-        transform: scale(1.5);
-    }
-</style>
-<script>
-    function openTab(e, tabName)
-    {
-        var i, tabContent, tablinks;
-
-        tabContent = document.getElementsByClassName('tabcontent');
-        for(i = 0; i < tabContent.length; i++)
-        {
-            tabContent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName('tablinks');
-        for(i = 0; i < tablinks.length; i++)
-        {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(tabName).style.display = "block";
-        e.currentTarget.className += " active";
-    }
-
-    document.getElementById("default").click();
-</script>
