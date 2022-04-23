@@ -7,6 +7,18 @@
         </title>
         <link href="default.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href = "jquery-ui-1.13.1.custom/jquery-ui.min.css" rel = "stylesheet">
+        <link href="jquery-ui-1.13.1.custom/jquery-ui.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script>
+            $(function()
+            {
+               $("#tabs").tabs({
+                collapsible: true
+               });
+            });
+        </script>
     </head>
     <body>
         <header>
@@ -65,6 +77,7 @@
            </script>
         </header>
         <main>
+            
             <div class="aboutContainer">
                 <img src="images/IMG_0379.jpeg" alt="client photo">
                 <div class="aboutText">
@@ -73,41 +86,38 @@
                         This is will be filled once my client sends me his about me summary, Lorem ipsum dolor sit amet, tempor prodesset eos no. 
                         Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.                
                     </p>
-                </div>
+                </div>'
             </div>
-            <div class="row">
-                <div class="column">
-                    <div class="card">
-                        <img src="images/IMG_0380.jpeg" alt="work" style="width: 20em; height: 17em;">
-                        <div class="textContainer">
-                            <p>
-                                Lorem ipsum dolor sit amet, tempor prodesset eos no. 
-                                Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.
-                            </p>
-                        </div>
-                    </div>
+            <div id="tabs">
+                <ul>
+                    <li> <a href="card-1">card-1</a> </li>
+                    <li> <a href="card-2">card-2</a> </li>
+                    <li> <a href="card-3">card-3</a> </li>
+                </ul>
+                <div id="card-1">
+                    <img src="images/IMG_0380.jpeg" alt="work" style="width: 20em; height: 17em;">
+                        <p>
+                            Lorem ipsum dolor sit amet, tempor prodesset eos no. 
+                            Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.
+                        </p>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <img src="images/IMG_0383.jpeg" alt="work" style="width: 20em; height: 17em;">
+                <div id="card-2">
+                    <img src="images/IMG_0383.jpeg" alt="work" style="width: 20em; height: 17em;">
                         <div class="textContainer">
                             <p>
                                 Lorem ipsum dolor sit amet, tempor prodesset eos no. 
                                 Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.
                             </p>
                         </div>
-                    </div>
                 </div>
-                <div class="column">
-                    <div class="card">
-                        <img src="images/shoeOne.jpeg" alt="work" style="width: 20em; height: 17em;">
+                <div id="card-3">
+                    <img src="images/shoeOne.jpeg" alt="work" style="width: 20em; height: 17em;">
                         <div class="textContainer">
                             <p>
                                 Lorem ipsum dolor sit amet, tempor prodesset eos no. 
                                 Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.
                             </p>
                         </div>
-                    </div>
                 </div>
             </div>
         </main>
