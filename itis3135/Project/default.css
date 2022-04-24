@@ -184,22 +184,23 @@ footer
 {
   color: #cd201f;
   box-shadow: 0 0 24px 0 #cd201f;
-}
+} 
 
 .row
 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  justify-content: center;
 }
 
-.portfolioColumn
+.gallery
 {
   flex: 25%;
   padding: 0 4px;
 }
 
-.portfolioColumn img
+.gallery img
 {
   margin-top: 8px;
   vertical-align: middle;
@@ -338,4 +339,36 @@ footer
   position: relative;
   overflow: visible;
   left: 450px;
+}
+
+.animation {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }

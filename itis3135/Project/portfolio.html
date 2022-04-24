@@ -5,8 +5,13 @@
         <title>
             Sate Design & Co | About
         </title>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+        <script src="jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>  
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
         <link href="default.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
     </head>
     <body>
         <header>
@@ -21,30 +26,27 @@
         </header>
         <main>
             <h1>Portfolio</h1>
+            <p style="text-align: center;">Click on a photo!</p>
             <div class="row">
-                <div class="portfolioColumn">
-                    <img src="images/photo16.jpeg" alt="portfolio">
-                    <img src="images/IMG_0383.jpeg" alt="portfolio">
-                    <img src="images/photo1.jpeg" alt="portfolio">
-                    <img src="images/photo10.jpeg" alt="portfolio">
-                    <img src="images/photo11.jpeg" alt="portfolio">
-                    <img src="images/photo12.jpeg" alt="portfolio">
-                </div>
-                <div class="portfolioColumn">
-                    <img src="images/photo14.jpeg" alt="portfolio">
-                    <img src="images/photo15.jpeg" alt="portfolio">
-                    <img src="images/IMG_0380.jpeg" alt="portfolio">
-                    <img src="images/photo2.jpeg" alt="portfolio">
-                    <img src="images/photo3.jpeg" alt="portfolio">
-                    <img src="images/photo4.jpeg" alt="portfolio">
-                </div>
-                <div class="portfolioColumn">
-                    <img src="images/photo5.jpeg" alt="portfolio">
-                    <img src="images/photo6.jpeg" alt="portfolio">
-                    <img src="images/photo7.jpeg" alt="portfolio">
-                    <img src="images/photo8.jpeg" alt="portfolio">
-                    <img src="images/photo9.jpeg" alt="portfolio">
-                    <img src="images/photo17.png" alt="portfolio">
+                <div class="gallery">
+                    <a data-fancybox="gallery" href="images/photo16.jpeg"><img src="images/photo16.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/IMG_0383.jpeg"><img src="images/IMG_0383.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo1.jpeg"><img src="images/photo1.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo10.jpeg"><img src="images/photo10.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo11.jpeg"><img src="images/photo11.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo12.jpeg"><img src="images/photo12.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo14.jpeg"><img src="images/photo14.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo15.jpeg"><img src="images/photo15.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/IMG_0380.jpeg"><img src="images/IMG_0380.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo2.jpeg"><img src="images/photo2.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo3.jpeg"><img src="images/photo3.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo4.jpeg"><img src="images/photo4.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo5.jpeg"><img src="images/photo5.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo6.jpeg"><img src="images/photo6.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo7.jpeg"><img src="images/photo7.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo8.jpeg"><img src="images/photo8.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo9.jpeg"><img src="images/photo9.jpeg" alt="portfolio"></a>
+                    <a data-fancybox="gallery" href="images/photo17.png"><img src="images/photo17.png" alt="portfolio"></a>
                 </div>
             </div>
         </main>
@@ -55,5 +57,17 @@
             <a href="https://www.instagram.com/satedesignco/?hl=en" class="fa fa-instagram"></a>
             <a href="https://www.youtube.com/channel/UCi6x1zaDJaux9_PPtI4avyQ" class="fa fa-youtube"></a>
         </footer>
+        <script type="text/javascript">
+            $(document).ready( function() {
+                Fancybox.bind("#gallery a", {
+                        groupAll : true, // Group all items
+                        on : {
+                        ready : (fancybox) => {
+                            console.log(`fancybox #${fancybox.id} is ready!`);
+                        }
+                    }
+                });
+            });
+            </script>
     </body>
 </html>
