@@ -5,6 +5,7 @@
         <title>
             Sate Design & Co | About
         </title>
+        <link rel="shortcut icon" href="images/favicon-16x16.png" id="favicon">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
         <script src="jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>  
         <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
@@ -15,14 +16,7 @@
     </head>
     <body>
         <header>
-            <nav class="topnavOther">
-                <img id="logo" src="images/Logo.png" alt="logo">
-                <a href="index.html">Home</a>
-                <a href="feedback.html">Feedback</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="quote.html">Quote</a>
-                <a href="Contact.html">Contact</a>
-            </nav>
+            <div data-include="components/header.html"></div>
         </header>
         <main>
             <h1>Portfolio</h1>
@@ -51,12 +45,9 @@
             </div>
         </main>
         <footer>
-            <hr>
-            <a href="../mccarterdeliandco.tech/">Designed by McCarter Deli & Co &copy;2022.</a>
-            <br>
-            <a href="https://www.instagram.com/satedesignco/?hl=en" class="fa fa-instagram"></a>
-            <a href="https://www.youtube.com/channel/UCi6x1zaDJaux9_PPtI4avyQ" class="fa fa-youtube"></a>
+            <div data-include="components/footer.html"></div>
         </footer>
+        <script src="scripts/htmlinclude.js"></script>
         <script type="text/javascript">
             $(document).ready( function() {
                 Fancybox.bind("#gallery a", {

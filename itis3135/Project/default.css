@@ -157,34 +157,19 @@ h1
 footer
 {
   text-align: center;
+  padding-top: 10px 10px 10px 10px;
 }
 
 .fa 
 {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  border-radius: 75%;
-  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
 }
 
 .fa:hover
 {
   opacity: 0.7;
 }
-
-.fa-instagram
-{
-  background-color: #8a3ab9;
-  color: white;
-}
-
-.fa-youtube
-{
-  color: #cd201f;
-  box-shadow: 0 0 24px 0 #cd201f;
-} 
 
 .row
 {
@@ -371,4 +356,11 @@ footer
 @-ms-keyframes fadeIn {
   0% {opacity:0;}
   100% {opacity:1;}
+}
+
+@media (prefers-color-scheme: dark)
+{
+  #favicon {
+    filter: invert(100%) sepia(100%) saturate(8%) hue-rotate(182deg) brightness(104%) contrast(104%);
+  }
 }
