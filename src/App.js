@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Link, BrowserRouter, HashRouter} from "react-router-dom";
 import "./App.css";
 import ThePost from './pages/ThePost';
 import Home from "./pages/Home";
@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Router>
         <nav>
           <ul>
@@ -47,7 +47,7 @@ function App() {
           <Route path='/thepost' element={<ThePost />}></Route>
         </Routes>
       </Router>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
