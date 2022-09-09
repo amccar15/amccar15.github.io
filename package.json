@@ -1,7 +1,7 @@
 {
   "name": "itis3300blog",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://amccar15.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
