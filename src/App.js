@@ -46,7 +46,7 @@ function App() {
           <Route path='/thepost' element={<ThePost />}></Route>
         </Routes>
     </Router>
-  )
+  );
 }
 
 export default App;
