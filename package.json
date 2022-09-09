@@ -2,7 +2,7 @@
   "name": "itis3300blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://amccar15.github.io",
+  "homepage": "https://amccar15.github.io/react-deploy",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",
