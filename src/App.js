@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {BrowserRouter as Router, Routes, Route, Link,} from "react-router-dom";
 import "./App.css";
 import ThePost from './pages/ThePost';
 import Home from "./pages/Home";
@@ -40,10 +40,11 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path='/' element={<Home isAuth={isAuth} />} />
-          <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
-          <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
-          <Route path='/thepost' element={<ThePost />}></Route>
+          <Route path='/' element={<Home isAuth={isAuth} />}>
+            <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
+            <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
+            <Route path='/thepost' element={<ThePost />} />
+          </Route>
         </Routes>
     </Router>
   );
