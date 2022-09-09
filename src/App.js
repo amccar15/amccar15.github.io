@@ -26,15 +26,15 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/" class="navlink"> Home </Link>
+              <Link to="/" className="navlink"> Home </Link>
             </li>
               {!isAuth ? (
-                <Link to="/login" class="navlink"> Login </Link>
+                <Link to="/login" className="navlink"> Login </Link>
                 ) : (
-                  <>
+                  <React.Fragment key={ signUserOut }>
                     <li><Link to="/createpost" class="navlink"> Create Post </Link></li>
                     <li class="navlink" onClick={ signUserOut }> Log Out</li>
-                  </>
+                  </React.Fragment>
                 )
               }
           </ul>
