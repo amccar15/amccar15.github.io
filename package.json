@@ -1,7 +1,7 @@
 {
   "name": "itis3300blog",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://amccar15.github.io/itis3300blog",
   "dependencies": {
     "-": "^0.0.1",
