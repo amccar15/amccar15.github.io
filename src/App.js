@@ -23,7 +23,6 @@ function App() {
 
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
-      <Router>
         <nav>
           <ul>
             <li>
@@ -46,7 +45,6 @@ function App() {
           <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
           <Route path='/thepost' element={<ThePost />}></Route>
         </Routes>
-      </Router>
     </HashRouter>
   )
 }
