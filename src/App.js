@@ -29,7 +29,9 @@ function App() {
               <Link to="/" className="navlink"> Home </Link>
             </li>
               {!isAuth ? (
-                <Link to="/login" className="navlink"> Login </Link>
+            <li>
+              <Link to="/login" className="navlink"> Login </Link>
+            </li>
                 ) : (
                   <>
                     <li><Link to="/createpost" class="navlink"> Create Post </Link></li>
