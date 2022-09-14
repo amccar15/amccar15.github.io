@@ -52,8 +52,8 @@ function Home({ isAuth }) {
                         <h3>@{post.author.name}</h3>
                         <img id="myimg"></img>
                         <br/>
-                        <button>
-                            <Link to={{pathname: "/thepost"}} state={{postInfo: post.id}}> View Post</Link>
+                        <button key={post.id}>
+                            <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>
                         </button>
                     </div>
                 </div>
