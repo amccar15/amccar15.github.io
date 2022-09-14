@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import {collection, getDocs, deleteDoc, doc} from 'firebase/firestore';
 import { auth, db } from '../firebase-config';
 import { Link } from 'react-router-dom';
+import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
 
 function Home({ isAuth }) {
@@ -25,6 +26,9 @@ function Home({ isAuth }) {
         getPosts();
     }, [deletePost]);
 
+    const storage = getStorage();
+    const starsRef = ref(storage, 'image/image.png');
+
     return (
         <div className="homePage">
             {postLists.map((post) => {
@@ -46,6 +50,8 @@ function Home({ isAuth }) {
                             </div>
                         <div className="postTextContainer"> {post.postText} </div>
                         <h3>@{post.author.name}</h3>
+                        <img id="myimg"></img>
+                        <br/>
                         <button>
                             <Link to={{pathname: "/thepost"}} state={{postInfo: post.id}}> View Post</Link>
                         </button>

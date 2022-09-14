@@ -203,3 +203,8 @@ textarea {
   overflow: hidden;
   overflow-y: auto;
 }
+
+#myimg {
+  width: 400px;
+  height: 400px;
+}
