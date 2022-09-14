@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <Router basename='/' >
+    <Router basename='/amccar15.github.io/itis3300blog' >
         <nav>
           <ul>
             <li>
