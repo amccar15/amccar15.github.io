@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {HashRouter as Router, Routes, Route, Link, BrowserRouter} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Link} from "react-router-dom";
 import "./App.css";
 import ThePost from './pages/ThePost';
 import Home from "./pages/Home";
