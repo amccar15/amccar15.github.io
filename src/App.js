@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {HashRouter as Router, Routes, Route, Link} from "react-router-dom";
+import {HashRouter, Routes, Route, Link} from "react-router-dom";
 import "./App.css";
 import ThePost from './pages/ThePost';
 import Home from "./pages/Home";
@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <Router>
+    <HashRouter basename='/'>
         <nav>
           <ul>
             <li>
@@ -47,7 +47,7 @@ function App() {
           <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
           <Route path='/thepost' element={<ThePost />} />
         </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
