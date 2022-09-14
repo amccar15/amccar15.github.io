@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {BrowserRouter as Router, Routes, Route, Link, BrowserRouter} from "react-router-dom";
+import {HashRouter as Router, Routes, Route, Link, BrowserRouter} from "react-router-dom";
 import "./App.css";
 import ThePost from './pages/ThePost';
 import Home from "./pages/Home";
@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <Router basename='/amccar15.github.io/itis3300blog' >
+    <Router>
         <nav>
           <ul>
             <li>
