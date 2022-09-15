@@ -1,4 +1,4 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { db } from '../firebase-config';
 import { collection, doc, getDoc } from 'firebase/firestore';
@@ -13,8 +13,6 @@ function ThePost() {
 
     const [seeAuthor, setAuthor] = useState([]);
 
-    const [authorID, setAuthorID] = useState([]);
-
     useEffect(() => {
         const getPost = async (postID) => {
             const postDoc = doc(postsCollectionRef, postID);
@@ -25,7 +23,6 @@ function ThePost() {
                 console.log("Document data: ", docSnap.data());
 
                 setAuthor(docSnap.data().author.name);
-                setAuthorID(docSnap.data().author.name);
             } else {
                 console.log("Error");
             }
