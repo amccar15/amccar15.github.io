@@ -48,12 +48,11 @@ function Home({ isAuth }) {
                                     )}
                                 </div>
                             </div>
+                            <button key={post.id}>
+                                <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>
+                            </button>
                         <div className="postTextContainer"> {post.postText} </div>
                         <h3>@{post.author.name}</h3>
-                        <br/>
-                        <button key={post.id}>
-                            <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>
-                        </button>
                     </div>
                 </div>
             })}
