@@ -50,7 +50,6 @@ function Home({ isAuth }) {
                             </div>
                         <div className="postTextContainer"> {post.postText} </div>
                         <h3>@{post.author.name}</h3>
-                        <img id="myimg"></img>
                         <br/>
                         <button key={post.id}>
                             <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>

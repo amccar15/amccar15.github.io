@@ -196,6 +196,8 @@ textarea {
 }
 
 .post .postTextContainer {
+  font-family: monospace;
+  white-space: pre-wrap;
   word-wrap: break-word;
   height: auto;
   max-height: 400px;
