@@ -2,10 +2,11 @@ import React, { useState, useEffect, Component } from "react";
 import {addDoc, collection} from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import {useNavigate} from 'react-router-dom';
-import { getStorage, ref, uploadBytes } from 'firebase/storage'
+
 import { Editor } from "react-draft-wysiwyg";
 import { convertFromRaw } from "draft-js";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import { render } from "@testing-library/react";
 
 function CreatePost({ isAuth }) {
 
