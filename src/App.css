@@ -90,7 +90,7 @@ li {
 }
 
 .cpContainer button {
-  margin-top: 20px;
+  margin: 20px 5px 0;
   height: 40px;
   border: none;
   border-radius: 5px;
@@ -100,6 +100,16 @@ li {
 input,
 .textarea {
   margin-top: 5px;
+}
+
+.cpContainer > * {
+  padding: 5px;
+}
+
+.editorClassName {
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .loginPage {
