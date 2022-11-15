@@ -31,19 +31,15 @@ function ThePost() {
     }, []);
     
     return (
-        <div className="homePage">
-            <div className="post"> 
-                <div className="post"> 
-                    <div className="postHeader">
-                        <h1> {docDetails.title} </h1>
-                    </div>
-                    <div className="postTextContainer"> {docDetails.postText} </div>
-                    <h3> 
-                        @{seeAuthor}
-                    </h3>
-                </div>
+        <div className="thePost"> 
+            <div className="postHeader">
+                <h1> {docDetails.title} </h1>
             </div>
-        </div>  
+            <div className="postTextContainer"> {docDetails.postText} </div>
+                <h3> 
+                    @{seeAuthor}
+                </h3>
+            </div>
     );
 }
 
