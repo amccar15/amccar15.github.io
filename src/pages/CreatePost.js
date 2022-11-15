@@ -57,11 +57,6 @@ function CreatePost({ isAuth }) {
             editorState,
             rawMessage: convertToHTML(editorState.getCurrentContent())
         })
-        const blocksFromHTML = convertFromHTML(editorState.getCurrentContent());
-        const state = ContentState.createFromBlockArray(blocksFromHTML);
-        setPostText({
-            convertMessage: EditorState.createWithContent(state)
-        })
     }
     
     //handling the message from rich text editor
