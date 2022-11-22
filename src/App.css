@@ -5,12 +5,18 @@ body {
 }
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
+.headerTitle {
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
 nav {
-  top: 0;
-  display: block;
-  height: auto;
-  width: auto;
-  justify-content: left;
+  display: flex;
+  height: 25%;
+  width: 100%;
   align-items: stretch;
   text-align: left;
   background: #7B8D8E;
@@ -29,7 +35,7 @@ li {
   --fill-color: #121212;
   position: relative;
   display: block;
-  padding: 4px 0;
+  padding: 4px, 0, 0, 0;
   font: 700 3rem Raleway, sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -123,6 +129,7 @@ input,
 
 .loginPage p {
   font-size: 30px;
+  color: white;
 }
 
 /* GOOGLE BUTTOn */
@@ -172,12 +179,9 @@ input,
 }
 
 .homePage .post {
-  width: auto;
-  height: auto;
-  max-height: 1000px;
-  max-width: 1000px;
-  background-color: #ebebebbc;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 95%;
+  height: 200px;
+  background-color: whitesmoke;
   margin: 5px;
   padding: 5px;
   border-radius: 15px;
@@ -211,14 +215,53 @@ input,
   font-family: Arial, Helvetica, sans-serif;
   white-space: pre-wrap;
   word-wrap: break-word;
+  overflow: hidden;
+  resize: none;
+  text-overflow: ellipsis;
+  height: 50px;
+}
+
+.thePost {
+  justify-content: center;
+}
+
+.thePost .postHeader {
+  color: white;
+  text-align: center;
+}
+
+.thePost .postTextContainer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
   height: auto;
-  max-height: 500px;
-  width: 100%;
+  width: auto;
+  margin: 20px;
   overflow: hidden;
   overflow-y: auto;
+}
+
+.thePost h3 {
+  color: white;
+  margin: 20px;
 }
 
 #myimg {
   width: 400px;
   height: 400px;
+}
+
+.wrapper-class {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.editor-class {
+  background-color:lightgray;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+.toolbar-class {
+  border: 1px solid #ccc;
 }

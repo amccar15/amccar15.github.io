@@ -1,39 +1,40 @@
-import React, { useState, useEffect, Component } from "react";
+import React, { useState, useEffect } from "react";
 import {addDoc, collection} from 'firebase/firestore';
 import { db, auth } from '../firebase-config';
 import {useNavigate} from 'react-router-dom';
 
-import { Editor } from "react-draft-wysiwyg";
-import { convertFromRaw } from "draft-js";
+import { ContentState, Editor } from "react-draft-wysiwyg";
+import draftToHtml from 'draftjs-to-html'; 
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
-import { render } from "@testing-library/react";
+import { convertFromRaw, convertToRaw, EditorState } from "draft-js";
+import { convertFromHTML, convertToHTML } from "draft-convert";
 
 function CreatePost({ isAuth }) {
 
-    const content = {"entityMap":{},"blocks":[{"key":"637gr","text":"Initialized from content state.","type":"unstyled","depth":0,"inlineStyleRanges":[],"entityRanges":[],"data":{}}]};
-
-    class EditorConvertToJSON extends Component {
-        constructor(props) {
-            super(props);
-                const contentState = convertFromRaw(content);
-                this.state = {
-                    contentState,
-                }
-            }
-            onContentStateChange = (contentState) => {
-                this.setState({
-                    contentState,
-                });
-            }
-        }
-
     const [title, setTitle] = useState("");
-    const [postText, setPostText] = useState("");
 
+    //rich text editor state
+    const [editorState, setEditorState] = useState(
+        {
+            message: "Enter your post here!",
+            rawMessage: '',
+        },
+    );
+
+    const [postText, setPostText] = useState(
+        {
+            convertMessage: '',
+            messagePost: ''
+        }
+    );
+
+    //firebase collection 
     const postsCollectionRef = collection(db, "posts");
 
+    //navigate function to navigate back to root file
     let navigate = useNavigate();
 
+    //sending data to firebase
     const createPost = async () => {
         await addDoc(postsCollectionRef, {
             title, 
@@ -43,11 +44,32 @@ function CreatePost({ isAuth }) {
         navigate("/");
     };
 
+    //checking if user is logged in
     useEffect(() => {
         if(!isAuth) {
             navigate("login");
         }
     }, []);
+
+    //converting to raw html
+    const onEditorStateChange = (editorState) => {
+        setEditorState({
+            editorState,
+            rawMessage: convertToHTML(editorState.getCurrentContent())
+        })
+    }
+    
+    //handling the message from rich text editor
+    const handleEditorStateMessage = () => {
+        setEditorState({
+            message: editorState.rawMessage
+        });
+        setPostText({
+            messagePost: postText.convertMessage
+        });
+        console.log("editorstate: ", editorState.rawMessage);
+        console.log("postText: ", postText.convertMessage);
+    }
 
     return (
         <div className="createPostPage"> 
@@ -63,21 +85,14 @@ function CreatePost({ isAuth }) {
                     />
                 </div>
                 <br></br>
-                <Editor className="editor"
-                        toolbarClassName="toolbarClassName"
-                        wrapperClassName="wrapperClassName"
-                        editorClassName="editorClassName" 
-                        >
-                <div className="inputGp">
-                    <label> Post: </label>
-                         <input placeholder="Post..." className="textspot"
-                        onChange={(event) => {
-                            setPostText(event.target.value)
-                            }
-                        } />
-                </div>
-                </Editor>
-                <button onClick={() => createPost()}> Submit Post</button>
+                <Editor 
+                    initialEditorState={editorState}
+                    onEditorStateChange={onEditorStateChange}
+                    toolbarClassName="toolbarClassName"
+                    wrapperClassName="wrapperClassName"
+                    editorClassName="editorClassName" 
+                />
+                <button onClick={() => {handleEditorStateMessage();}}> Submit Post</button>
             </div>
         </div>
     );

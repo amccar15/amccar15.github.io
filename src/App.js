@@ -17,37 +17,40 @@ function App() {
       .then(() => {
         localStorage.clear();
         setIsAuth(false);
-        window.location.pathname = "/#/login";
+        window.location.pathname = "/#/";
       })
   }
 
   return (
-    <HashRouter basename='/'>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/" className="navlink"> Home </Link>
-            </li>
-              {!isAuth ? (
-            <li>
-              <Link to="/login" className="navlink"> Login </Link>
-            </li>
-                ) : (
-                  <>
-                    <li><Link to="/createpost" class="navlink"> Create Post </Link></li>
-                    <li><a class="navlink" onClick={ signUserOut }> Log Out</a></li>
-                  </>
-                )
-              }
-          </ul>
-        </nav>
-        <Routes>
-          <Route path='/' element={<Home isAuth={isAuth} />} />
-          <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
-          <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
-          <Route path='/thepost/:id' element={<ThePost />} />
-        </Routes>
-    </HashRouter>
+    <div>
+      <h1 className='headerTitle'>Welcome To The Agile Blog</h1>
+      <HashRouter basename='/'>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/" className="navlink"> Home </Link>
+              </li>
+                {!isAuth ? (
+                  <li>
+                    <Link to="/login" className="navlink"> Login </Link>
+                  </li>
+                  ) : (
+                    <>
+                      <li><Link to="/createpost" class="navlink"> Create Post </Link></li>
+                      <li class="navlink" onClick={ signUserOut }> Log Out</li>
+                    </>
+                  )
+                }
+            </ul>
+          </nav>
+          <Routes>
+            <Route path='/' element={<Home isAuth={isAuth} />} />
+            <Route path="/createpost" element={<CreatePost isAuth={isAuth} />} />
+            <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
+            <Route path='/thepost/:id' element={<ThePost />} />
+          </Routes>
+      </HashRouter>
+    </div>
   );
 }
 

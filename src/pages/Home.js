@@ -30,32 +30,35 @@ function Home({ isAuth }) {
     const starsRef = ref(storage, 'image/image.png');
 
     return (
-        <div className="homePage">
-            {postLists.map((post) => {
-                return <div className="post"> 
-                    <div className="post">
-                            <div className="postHeader">
-                                <div className="title">
-                                    <h1> {post.title} </h1>
+        <div>
+            <div className="heroSection">
+                
+            </div>
+            <div className="homePage">
+                {postLists.map((post) => {
+                    return <div className="post"> 
+                                <div className="postHeader">
+                                    <div className="title">
+                                        <h1> {post.title} </h1>
+                                    </div>
+                                    <div className="deletePost">
+                                        {isAuth && post.author.id === auth.currentUser.uid && (
+                                            <button 
+                                                onClick={() => {
+                                                    deletePost(post.id);
+                                                }}> X 
+                                            </button>
+                                        )}
+                                    </div>
                                 </div>
-                                <div className="deletePost">
-                                    {isAuth && post.author.id === auth.currentUser.uid && (
-                                        <button 
-                                            onClick={() => {
-                                                deletePost(post.id);
-                                            }}> X 
-                                        </button>
-                                    )}
-                                </div>
-                            </div>
-                            <button key={post.id}>
-                                <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>
-                            </button>
-                        <div className="postTextContainer"> {post.postText} </div>
-                        <h3>@{post.author.name}</h3>
+                                <button key={post.id}>
+                                    <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>
+                                </button>
+                            <div className="postTextContainer"> {post.postText} </div>
+                            <h3>@{post.author.name}</h3>
                     </div>
-                </div>
-            })}
+                })}
+            </div>
         </div>
     );
 }
