@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.0fa28030.css",
-    "main.js": "/static/js/main.b081cd9a.js",
+    "main.css": "/static/css/main.e1ed291b.css",
+    "main.js": "/static/js/main.ef3e2454.js",
     "static/js/787.4101ed4d.chunk.js": "/static/js/787.4101ed4d.chunk.js",
+    "static/media/how-create-present-resource-plan.jpg": "/static/media/how-create-present-resource-plan.a5c8477ba7d21177405b.jpg",
+    "static/media/Importance-of-project-scope-management.jpeg": "/static/media/Importance-of-project-scope-management.c2c8913cca3f721cd466.jpeg",
+    "static/media/Its-important-to-stay-abreast-of-new-procurement-technologies.jpg": "/static/media/Its-important-to-stay-abreast-of-new-procurement-technologies.c3f84bdaa098ec88fc4f.jpg",
+    "static/media/project-risk.jpg": "/static/media/project-risk.e70d2a40735ca9254f5c.jpg",
+    "static/media/Project-Communication-Management.jpg": "/static/media/Project-Communication-Management.4076f67ecd7e510830d8.jpg",
+    "static/media/Project_Quality_Management.avif": "/static/media/Project_Quality_Management.60315c2099495b01e190.avif",
+    "static/media/Project-Cost-Management-Plan.jpg": "/static/media/Project-Cost-Management-Plan.259209b02e99ca499d70.jpg",
     "index.html": "/index.html",
-    "main.0fa28030.css.map": "/static/css/main.0fa28030.css.map",
-    "main.b081cd9a.js.map": "/static/js/main.b081cd9a.js.map",
+    "main.e1ed291b.css.map": "/static/css/main.e1ed291b.css.map",
+    "main.ef3e2454.js.map": "/static/js/main.ef3e2454.js.map",
     "787.4101ed4d.chunk.js.map": "/static/js/787.4101ed4d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fa28030.css",
-    "static/js/main.b081cd9a.js"
+    "static/css/main.e1ed291b.css",
+    "static/js/main.ef3e2454.js"
   ]
 }
