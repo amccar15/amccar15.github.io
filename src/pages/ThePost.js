@@ -35,7 +35,7 @@ function ThePost() {
             <div className="postHeader">
                 <h1> {docDetails.title} </h1>
             </div>
-            <div className="postTextContainer"> {docDetails.postText} </div>
+            <div className="postTextContainer" dangerouslySetInnerHTML={{__html: docDetails.postText}}></div>
                 <h3> 
                     @{seeAuthor}
                 </h3>

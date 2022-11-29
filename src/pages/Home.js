@@ -4,7 +4,6 @@ import { auth, db } from '../firebase-config';
 import { Link } from 'react-router-dom';
 import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
-
 function Home({ isAuth }) {
     const [postLists, setPostList] = useState([]);
 
@@ -54,7 +53,7 @@ function Home({ isAuth }) {
                                 <button key={post.id}>
                                     <Link to={{pathname: '/thepost/'+post.id}}> View Post</Link>
                                 </button>
-                            <div className="postTextContainer"> {post.postText} </div>
+                            <div className="postTextContainer" dangerouslySetInnerHTML={{__html: post.postText}}></div>
                             <h3>@{post.author.name}</h3>
                     </div>
                 })}
