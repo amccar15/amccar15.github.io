@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1ed291b.css",
-    "main.js": "/static/js/main.ef3e2454.js",
+    "main.css": "/static/css/main.0a1afc86.css",
+    "main.js": "/static/js/main.d92061d0.js",
     "static/js/787.4101ed4d.chunk.js": "/static/js/787.4101ed4d.chunk.js",
     "static/media/how-create-present-resource-plan.jpg": "/static/media/how-create-present-resource-plan.a5c8477ba7d21177405b.jpg",
     "static/media/Importance-of-project-scope-management.jpeg": "/static/media/Importance-of-project-scope-management.c2c8913cca3f721cd466.jpeg",
@@ -11,12 +11,12 @@
     "static/media/Project_Quality_Management.avif": "/static/media/Project_Quality_Management.60315c2099495b01e190.avif",
     "static/media/Project-Cost-Management-Plan.jpg": "/static/media/Project-Cost-Management-Plan.259209b02e99ca499d70.jpg",
     "index.html": "/index.html",
-    "main.e1ed291b.css.map": "/static/css/main.e1ed291b.css.map",
-    "main.ef3e2454.js.map": "/static/js/main.ef3e2454.js.map",
+    "main.0a1afc86.css.map": "/static/css/main.0a1afc86.css.map",
+    "main.d92061d0.js.map": "/static/js/main.d92061d0.js.map",
     "787.4101ed4d.chunk.js.map": "/static/js/787.4101ed4d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1ed291b.css",
-    "static/js/main.ef3e2454.js"
+    "static/css/main.0a1afc86.css",
+    "static/js/main.d92061d0.js"
   ]
 }
