@@ -13,6 +13,8 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
 
+  document.title = "The Agile Blog"
+
   const [isAuth, setIsAuth] = useState(localStorage.getItem("isAuth"));
 
   const [searchType, setSearchType] = useState("title");
