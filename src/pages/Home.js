@@ -41,7 +41,7 @@ function Home({ isAuth }) {
                 <div className="HomeSections">
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/Importance-of-project-scope-management.jpeg")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/Importance-of-project-scope-management.jpeg")} alt="Scope management"/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Scope Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -89,7 +89,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/Project-Scheduling-Management.png")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/Project-Scheduling-Management.png")} alt="Scope management"/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Schedule Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -137,7 +137,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/Project-Cost-Management-Plan.jpg")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/Project-Cost-Management-Plan.jpg")} alt="Scope management"/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Cost Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -185,7 +185,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/Project_Quality_Management.avif")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/Project_Quality_Management.avif")} alt="Scope management "/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Quality Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -233,7 +233,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/how-create-present-resource-plan.jpg")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/how-create-present-resource-plan.jpg")} alt="Scope management"/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Resource Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -281,7 +281,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/Project-Communication-Management.jpg")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/Project-Communication-Management.jpg")} alt="Scope management"/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Communications Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -329,7 +329,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/project-risk.jpg")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/project-risk.jpg")} alt="Scope management"/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Risk Management?</h1>
                                 <span className="openBtn" onClick={() => 
@@ -377,7 +377,7 @@ function Home({ isAuth }) {
                     </div>
                     <div className="HomeSection1">
                         <div className="sectionGroup">
-                            <img className="topicImg" src={require("../assets/Its-important-to-stay-abreast-of-new-procurement-technologies.jpg")} alt="Scope management photo"/>
+                            <img className="topicImg" src={require("../assets/Its-important-to-stay-abreast-of-new-procurement-technologies.jpg")} alt="Scope management "/>
                             <div className="btnGroup">
                                 <h1>Topics in Project Procurement Management?</h1>
                                 <span className="openBtn" onClick={() => 

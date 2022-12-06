@@ -24,7 +24,7 @@ function App() {
       .then(() => {
         localStorage.clear();
         setIsAuth(false);
-        window.location.pathname = "/#/";
+        window.location.pathname = "/";
       })
   }
 
@@ -62,11 +62,11 @@ function App() {
                         <option value={'author'}>Author</option>
                     </select>
                     <input type={"text"} placeholder="Search" name="searchInput" value={searchInput} onChange={(e) => handleInputChange(e)}/>
-                    <button type="submit">
-                      <Link to={{pathname: '/showSearch/'+searchType+'/'+searchInput}} >
-                        <FontAwesomeIcon icon={ faMagnifyingGlass } size={"3x"} className="searchButton"/>
-                      </Link>
-                    </button>
+                      <div className='searchButtonContainer'>
+                        <Link to={{pathname: '/showSearch/'+searchType+'/'+searchInput}} >
+                          <FontAwesomeIcon icon={ faMagnifyingGlass } size={"3x"} className="searchButton"/>
+                        </Link>
+                      </div>
                 </li>
             </ul>
           </nav>
