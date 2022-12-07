@@ -369,8 +369,10 @@ img[src=""]{
   margin-left: 5.3%;
   position:absolute;
   text-align:center;
-  top: 40%;
+  top: 500px;
+  left: 45%;
   width: 90%;
+  transform: translate(-50%, -50%);
   font-size: 50px;
   color: #FFFFFF;
   text-decoration: underline;

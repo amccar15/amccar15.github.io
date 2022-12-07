@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import {HashRouter, Routes, Route, Link} from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import {HashRouter, Routes, Route, Link, useNavigate} from "react-router-dom";
 import "./App.css";
 import ThePost from './pages/ThePost';
 import Home from "./pages/Home";
